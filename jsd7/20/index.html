@@ -6,9 +6,87 @@
     <title>Developer's Pathway</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script> tailwind.config={theme:{extend:{colors:{colmar:'#4a4a4a', colmarlight:'#dbdbdb', colmarbg: '#9b9b9b'}}}} </script>
+
   </head>
   <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+<header class="md:flex md:justify-between md:pl-4 md:pr-4">
+      <div class="md:flex md:items-center hidden">
+        <img src="../../images/ic-logo.svg" class="md:h-14" alt="">
+        <h1 class="md:text-colmar font-bold md:text-4xl">COLMAR</h1>
+        <h1 class=" font-bold md:text-4xl">ACADEMY</h1>
+    </div>
+    <nav class="md:flex md:items-center hidden">
+      <ul class="md:flex" >
+          <li class="md:flex md:pl-4 md:pr-4 md:text-xl">On Campus</li>
+          <li class="md:flex md:pl-4 md:pr-4 md:text-xl">Online</li>
+          <li class="md:flex md:pl-4 md:pr-4 md:text-xl">For Companies</li>
+          <li class="md:flex md:pl-4 md:pr-4 md:text-xl">Sign in</li>
+      </ul>
+  </nav>       
+      <div class="h-16 flex justify-evenly items-center md:hidden">
+
+        <img src="../../images/ic-logo.svg" class="h-16 md:h-14" alt="">
+        <img src="../../images/ic-on-campus.svg" class="h-16 md:h-14" alt="">
+        <img src="../../images/ic-online.svg" class="md:h-16 h-14" alt="">
+        <img src="../../images/ic-login.svg" class="md:h-16 h-14" alt="">
+
+        </div>
+    </header>
+
+
+    <section class="block md:flex md:justify-evenly md:items-center bg-colmarlight">
+      <img class="md:w-4/6 hover:scale-105 hover:cursor-pointer" src="/images/banner.jpg" alt="banner reading">
+      <div class="md:w-2/6 justify-center pl-4 ">
+          <h1 class="py-8 text-4xl font-bold text-colmar ">Learn something new everyday </h1>
+          <p class="pb-6 py-8 text-2xl font-semibold text-colmar">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button class="md:bg-colmar bg-colmarbg pr-4 w-full h-12 hover:scale-105"><span class="text-white font-semibold text-xl">Start here</span></button>
+      </div>
+    </section>
+
+
+    <section class="information block items-center pt-4 ">
+      <div class="img-two hidden">
+          <img src="../../images/information-main.jpg" alt="">
+          <h1>It doesn't hurt to keep practicing</h1>
+          <p class="img-two-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iusto asperiores temporibus quaerat maxime corrupti quibusdam quidem sequi voluptatum numquam, nisi, esse, accusantium officia et ut expedita illum veniam quae!"</p>
+          <p class="img-two-ref">Emanuel, Sr Stragegist at Hiring.com</p>
+      </div>
+      
+      <div class="cards-two-container w-full block text-colmar ">
+          <div class="card-two first flex-1 justify-center items-center ">
+              <img class="img-desktop hidden" src="../../images/information-orientation.jpg" alt="orientation">
+              <img class="img.mobile block w-full px-6 " src="../../images/information-orientation-mobile.jpg" alt="orientation">
+              <div class="img-describe px-6" >
+                  <h2>Orientation date</h2>
+                  <p class="info-text">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                  <p class="readmore">Read more</p> <!-- make the text blue -->
+              </div>
+          </div>
+
+          <div class="card-two w-full block second">
+              <img class="img-desktop hidden" src="../../images/information-campus.jpg" alt="campus">
+              <img class="img.mobile block w-full px-6" src="../../images/information-campus-mobile.jpg" alt="campus">
+              <div class="img-describe">
+                  <h2>Our campus</h2>
+                  <p>Find which campus is close by you</p>
+                  <p class="readmore">Read more</p> <!-- make the text blue -->
+              </div>
+          </div>
+
+          <div class="card-two w-full block third bg-white">
+              <img class="img-desktop hidden" src="../../images/information-guest-lecture.jpg" alt="guest-lecture">
+              <img class="img.mobile block w-full px-6" src="../../images/information-guest-lecture-mobile.jpg" alt="guest-lecture">
+              <div class="img-describe">
+                  <h2>Our guest lecture</h2>
+                  <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                  <p class="readmore">Read more</p> <!-- make the text blue -->
+              </div>
+          </div>
+
+      </div>
+  </section>
+
+   
   </body>
 </html>
