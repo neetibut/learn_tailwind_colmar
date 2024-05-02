@@ -7,8 +7,57 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+  <header>
+    <!-- Nav-Mobile -->
+    <nav class="flex justify-between h-16 items-center px-3 md:hidden">
+      <a href=""><img src="../../images/ic-logo.svg" alt="" /></a>
+      <a href=""><img src="../../images/ic-on-campus.svg" alt="" /></a>
+      <a href=""><img src="../../images/ic-online.svg" alt="" /></a>
+      <a href=""><img src="../../images/ic-login.svg" alt="" /></a>
+    </nav>
+    <!-- Nav-Desktop -->
+    <nav class="hidden md:flex justify-between h-16 items-center px-5">
+      <div class="flex">
+        <img src="../../images/ic-logo.svg" alt="" class="h-12" /><span
+          class="font-semibold text-4xl"
+          >COLMAR</span
+        ><span class="text-teal-300 text-4xl">ACADEMY</span>
+      </div>
+      <div>
+        <ul class="text-1xl font-semibold flex">
+          <li><a href="" class="hover:text-blue-500 px-2">On Campus</a></li>
+          <li><a href="" class="hover:text-blue-500 px-2">Online</a></li>
+          <li><a href="" class="hover:text-blue-500 px-2">Our Companies</a></li>
+          <li><a href="" class="hover:text-blue-500 px-2">Sign in</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body class="text-[#494545]">
+    <!-- Hero Section -->
+    <section class="bg-neutral-300 md:flex w-full">
+      <img
+        src="../../images/banner.jpg"
+        alt=""
+        class="md:w-3/5 md:px-10 md:py-8"
+      />
+      <div class="py-8 flex-row px-14 md:px-0 md:flex-row items-center">
+        <p class="text-4xl font-bold py-2 md:text-6xl md:pt-14 md:mt-12">
+          Learn something <br />
+          new everyday
+        </p>
+        <p class="font-medium py-1.5 md:text-3xl md:py-10">
+          Lorem ipsum dolar sit amet,<br />
+          consectetur adipiscing elit.
+        </p>
+        <button
+          class="bg-[#4b4545] hover:bg-[#615757] w-full py-2 text-white font-medium"
+        >
+          Start here
+        </button>
+      </div>
+    </section>
+    <!-- Information Section -->
+    <section></section>
   </body>
 </html>
