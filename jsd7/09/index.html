@@ -7,8 +7,124 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+    <header class="h-16 items-center">
+      <nav class="flex justify-between px-6 h-16 items-center md:hidden">
+        <i><img src="..\..\images\ic-logo.svg" /></i>
+        <i><img src="..\..\images\ic-online.svg" /></i>
+        <i><img src="..\..\images\ic-on-campus.svg" /></i>
+        <i><img src="..\..\images\ic-login.svg" /></i>
+      </nav>
+      <nav class="hidden md:flex justify-between px-6 h-16">
+        <div class="flex items-center">
+          <a href="#" class="flex items-center">
+            <i> <img src="..\..\images\ic-logo.svg" /> </i>
+            <p><stong class="font-bold">COLMAR</stong>ACADEMY</p>
+          </a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#" class="text-lg">On campus</a>
+          <a href="#" class="text-lg">Online</a>
+          <a href="#" class="text-lg">For companies</a>
+          <a href="#" class="text-lg">Sign in</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="bg-gray-300 md:flex items-center" id="hero">
+        <div class="flex justify-center md:mx-6 md:my-8">
+          <img src="..\..\images\banner.jpg" />
+        </div>
+        <div class="px-4">
+          <h1 class="my-8 text-3xl font-bold">Learn something new everyday</h1>
+          <h2 class="b-6 my-6 font-medium text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </h2>
+          <button
+            class="font-medium bg-gray-400 mb-8 py-3 w-full text-white hover:bg-gray-500"
+          >
+            Start here
+          </button>
+        </div>
+      </section>
+      <section
+        class="pt-4 px-4 flex flex-col items-center md:flex-row md:items-start md:py-8 md:px-0"
+        id="information"
+      >
+        <div id="information_left" class="hidden md:flex flex-col px-6 w-7/12">
+          <div class="pb-8">
+            <img src="..\..\images\information-main.jpg" />
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold pb-6">
+              It doesn't hurt to keep praticing
+            </h2>
+            <p>
+              "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+              commodo lectus, nec consequat neque. Sed non accumsan urna.
+              Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+              dolor consequat, tristique ligula."
+            </p>
+            <p class="pt-6">Emanuel, Sr Strategist at Hiring.com</p>
+          </div>
+        </div>
+        <div id="information_right" class="w-5/12">
+          <div class="hover:bg-gray-300 md:flex md:items-center">
+            <div class="md:h-full">
+              <img
+                class="md:hidden"
+                src="..\..\images\information-orientation-mobile.jpg"
+              />
+              <img
+                class="hidden md:flex w-full p-6"
+                src="..\..\images\information-orientation.jpg"
+              />
+            </div>
+            <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
+              <h2 class="text-xl font-medium">Orientation date</h2>
+              <p>Tue 10/11 & Wed 10/12 : 8am-3pm</p>
+              <a href="#" class="text-cyan-600">Read more</a>
+            </div>
+          </div>
+          <div class="hover:bg-gray-300 md:flex md:items-center">
+            <div class="md:h-full">
+              <img
+                class="md:hidden"
+                src="..\..\images\information-campus-mobile.jpg"
+              />
+              <img
+                class="hidden md:flex w-full p-6"
+                src="..\..\images\information-campus.jpg"
+              />
+            </div>
+            <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
+              <h2 class="text-xl font-medium">Our campus</h2>
+              <p>Find which campus is close by you</p>
+              <a href="#" class="text-cyan-600">Read more</a>
+            </div>
+          </div>
+          <div class="hover:bg-gray-300 md:flex md:items-center">
+            <div class="md:h-full">
+              <img
+                class="md:hidden"
+                src="..\..\images\information-guest-lecture-mobile.jpg"
+              />
+              <img
+                class="hidden md:flex w-full p-6"
+                src="..\..\images\information-guest-lecture.jpg"
+              />
+            </div>
+            <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
+              <h2 class="text-xl font-medium">Special guest lecture</h2>
+              <p>
+                Join a keynote with Oliver Sack about music in medical treatment
+              </p>
+              <a href="#" class="text-cyan-600">Read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
