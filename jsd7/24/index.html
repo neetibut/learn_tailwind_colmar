@@ -6,17 +6,47 @@
     <title>Developer's Pathway</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/base.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div> <!-- logo section-->
-        <a href="#">
-          <img src="../../images/ic-logo.svg"><span>Colmar Academy</span>
+      <div class="hidden">
+      <div class="flex justify-between px-6 text-2xl"> <!-- logo section-->
+        <a href="#" class="flex flex-row flex-wrap items-center">
+          <img class="h-16" src="../../images/ic-logo.svg">
+          <p>Colmar <span class="font-bold">Academy</span></p>
         </a>
       </div>
+      </div>
+      <nav>
+        <div class="hidden">
+            <ul class="flex flex-row pt-4 gap-4">
+              <li><a href="#">Campus</a></li>
+              <li><a href="#">Online</a></li>
+              <li><a href="#">Our companies</a></li>
+              <li><a href="#">Sign in</a></li>
+            </ul>
+        </div>
+          <div class="h-16">
+          <ul class="flex justify-around pt-4">
+            <li><a href="#"><img src="../../images/ic-logo.svg"></a></li>
+            <li><a href="#"><img src="../../images/ic-on-campus.svg"></a></li>
+            <li><a href="#"><img src="../../images/ic-online.svg"></a></li>
+            <li><a href="#"><img src="../../images/ic-login.svg"></a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    
+    <main>
+      <section id="hero">
+        <div><img src="../../images/banner.jpg"</div>
+        <div class="bg-gray-300">
+          <div class="text-5xl font-bold text-gray-600 px-4 pt-8"><h1>Learn something new everyday</h1></div>
+          <div class="text-xl font-bold text-gray-600 px-4 pt-8"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+          <div class="flex justify-center pt-6 pb-8"><button class="w-48 bg-gray-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded">Start here</button></div>
+        </div>
+      </section>
+    </main>
     <a href="../../index.html">Back to NJMKL</a>
   </body>
 </html>
