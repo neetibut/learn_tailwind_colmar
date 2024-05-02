@@ -8,7 +8,84 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+    <head>
+      <nav class="h-16 place-content-center ">
+        
+        <ul class="md:flex justify-between hidden ">
+          <li>On campus</li>
+          <li>Online</li>
+          <li>For companies</li>
+          <li>Sign in</li>
+        </ul>
+        <ul class="flex justify-around md:hidden ">
+          <li class="hover:bg-gray-300"><img src="/learn_tailwind_colmar/images/ic-logo.svg"></li>
+          <li class="hover:bg-gray-300"><img src="/learn_tailwind_colmar/images/ic-on-campus.svg"></li>
+          <li class="hover:bg-gray-300"><img src="/learn_tailwind_colmar/images/ic-online.svg"></li>
+          <li class="hover:bg-gray-300"><img src="/learn_tailwind_colmar/images/ic-login.svg"></li>
+
+        </ul>
+      </nav>
+    </head>
+    <section class="md:flex md:py-8 md:bg-gray-300 md:pl-6 pb-8 bg-gray-300">
+      <div class="md:w-3/5">
+        <img src="/learn_tailwind_colmar/images/banner.jpg" />
+      </div>
+      <div class="px-4 md:content-center md:pl-6">
+        <h1 class="py-8 font-bold text-2xl">Learn something new everyday</h1>
+        <p class="pb-6">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <button class="bg-gray-500 text-white py-2 w-full">Start here</button>
+      </div>
+    </section>
+    <section class="pt-4 pl-4 pr-4">
+      <div class = "md:flex hidden">
+        <img src="./images/information-main.jpg">
+      </div>
+      <div class="flex md:hidden flex-col">
+        <div class="flex flex-col">
+          <div class="flex ">
+            <img src="/learn_tailwind_colmar/images/information-orientation-mobile.jpg">
+          </div>
+          <div class=" flex flex-col pb-8 pt-5 px-4 gap-3">
+            <div class="text-2xl font-bold">Orientation date</div>
+            <div>Tue 10/11 & Wed 10/12; 8am-3pm</div>
+            <a href ="#" target="_blank" class="text-blue-500">Read more</a>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div>
+            <img src="/learn_tailwind_colmar/images/information-campus-mobile.jpg">
+          </div>
+          <div class=" flex flex-col pb-8 pt-5 px-4 gap-3">
+            <div class="text-2xl font-bold">Our campus</div>
+            <div>Find which campus is close by you</div>
+            <a href ="#" target="_blank" class="text-blue-500">Read more</a>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div>
+            <img src="/learn_tailwind_colmar/images/information-guest-lecture-mobile.jpg">
+          </div>
+          <div class=" flex flex-col pb-8 pt-5 px-4 gap-3">
+            <div class="text-2xl font-bold">Special guest lecture</div>
+            <div>Join a keynote with Oliver Sack about<br>music in medical treatment</div>
+            <a href ="#" target="_blank" class="text-blue-500">Read more</a>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <section class="flex flex-col pl-4">
+      <div class="flex text-3xl font-bold place-content-center pt-8 pb-4">Star learning</div>
+      <div class="flex flex-col justify-between gap-2 font-semibold">
+        <div class="bg-[#bababef3] hover:bg-slate-700 pb-6 pt-4 pl-4 href="#bababef3" ">Software engineering</div>
+        <div class="bg-[#c7c7c7f3] hover:bg-slate-700 pb-6 pt-4 pl-4 href="#bababef3" ">Computer art</div>
+        <div class="bg-[#afafb3f3] hover:bg-slate-700 pb-6 pt-4 pl-4 href="#bababef3" ">Design</div>
+        <div class="bg-[#afafb3f3] hover:bg-slate-700 pb-6 pt-4 pl-4 href="#bababef3" ">Data</div>
+        <div class="bg-[#afafb3f3] hover:bg-slate-700 pb-6 pt-4 pl-4 href="#bababef3" ">Business</div>
+        <div class="bg-[#afafb3f3] hover:bg-slate-700 pb-6 pt-4 pl-4 href="#bababef3" ">Marketing</div>
+        
+      </div>
+    </section>
   </body>
 </html>
