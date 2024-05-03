@@ -1,14 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer's Pathway</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="shortcut icon"
+			href="../../images/ic-logo.svg"
+			type="image/x-icon"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>31-vicky-colmar</title>
+	</head>
+	<body class="text-neutral-700">
+		<header class="flex justify-between items-center h-16 sm:px-6">
+			<a href="#" class="hidden sm:flex items-center h-8 tracking-wide">
+				<picture>
+					<img src="../../images/ic-logo.svg" alt="Logo icon" />
+				</picture>
+				<p class="text-lg font-bold">COLMAR</p>
+				<p class="text-lg text-neutral-400">ACADEMY</p>
+			</a>
+
+			<nav>
+				<ul class="hidden sm:flex gap-4">
+					<li><a href="#">On campus</a></li>
+					<li><a href="#">Online</a></li>
+					<li><a href="#">For companies</a></li>
+					<li><a href="#">Sign in</a></li>
+				</ul>
+			</nav>
+
+			<nav class="sm:hidden flex justify-around w-full">
+				<a href="#">
+					<img class="w-8" src="../../images/ic-logo.svg" alt="Logo icon" />
+				</a>
+				<a href="#">
+					<img
+						class="w-8"
+						src="../../images/ic-on-campus.svg"
+						alt="On campus icon"
+					/>
+				</a>
+				<a href="#">
+					<img class="w-8" src="../../images/ic-online.svg" alt="Online icon" />
+				</a>
+				<a href="#">
+					<img class="w-8" src="../../images/ic-login.svg" alt="Log in icon" />
+				</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="flex flex-col bg-neutral-300">
+				<picture>
+					<img class="w-full" src="../../images/banner.jpg" alt="Banner" />
+				</picture>
+
+				<article class="py-8 px-4">
+					<h1 class="text-4xl font-bold">Learn something new everyday</h1>
+					<p class="pt-8 pb-6 font-bold">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</p>
+
+					<button class="py-2 bg-neutral-700 text-neutral-50 w-full">
+						Start here
+					</button>
+				</article>
+			</section>
+
+			<section class="bg-neutral-100 border-b-2 border-neutral-200">
+				<article class="hidden">
+					<picture>
+						<img
+							src="../../images/information-main.jpg"
+							alt="Information Main"
+						/>
+					</picture>
+					<h2>It doesn't hurt to keep practicing</h2>
+					<p>
+						"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+						commodo lectus, nec consequat neque. Sed non accumsan urna.
+						Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+						dolor consequat, tristique ligula."
+					</p>
+					<p>Emanuel, Sr Strategist at Hiring.com</p>
+				</article>
+
+				<div>
+					<article class="pt-4 pb-8 px-4">
+						<picture>
+							<img
+								class="hidden"
+								src="../../images/information-orientation.jpg"
+								alt="Orientation date"
+							/>
+							<img
+								class="w-full"
+								src="../../images/information-orientation-mobile.jpg"
+								alt="Orientation date"
+							/>
+						</picture>
+						<div class="flex flex-col p-4 gap-2">
+							<h3 class="text-2xl font-bold">Orientation date</h3>
+							<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+							<a class="text-sky-600" href="#">Read more</a>
+						</div>
+					</article>
+
+					<article class="pt-4 pb-8 px-4">
+						<picture>
+							<img
+								class="hidden"
+								src="../../images/information-campus.jpg"
+								alt="Campus"
+							/>
+							<img
+								class="w-full"
+								src="../../images/information-campus-mobile.jpg"
+								alt="Campus"
+							/>
+						</picture>
+						<div class="flex flex-col p-4 gap-2">
+							<h3 class="text-2xl font-bold">Our campus</h3>
+							<p>Find which campus is close by you</p>
+							<a class="text-sky-600" href="#">Read more</a>
+						</div>
+					</article>
+
+					<article class="pt-4 pb-8 px-4">
+						<picture>
+							<img
+								class="hidden"
+								src="../../images/information-guest-lecture.jpg"
+								alt="Guest Lecture"
+							/>
+							<img
+								class="w-full"
+								src="../../images/information-guest-lecture-mobile.jpg"
+								alt="Guest Lecture"
+							/>
+						</picture>
+						<div class="flex flex-col p-4 gap-2">
+							<h3 class="text-2xl font-bold">Our guest lecture</h3>
+							<p>
+								Join a keynote with Oliver Sack about music in medical treatment
+							</p>
+							<a class="text-sky-600" href="#">Read more</a>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="bg-neutral-100 border-b-2 border-neutral-200 py-8 px-4">
+				<h2 class="text-3xl font-bold text-center pb-4">Start Learning</h2>
+
+				<div class="flex flex-col gap-4">
+					<article class="pt-4 pb-6 px-4 bg-neutral-300">
+						<picture class="hidden">
+							<img
+								src="../../images/course-software.jpg"
+								alt="Software engineering course"
+							/>
+						</picture>
+						<div class="course-content">
+							<h3 class="text-2xl font-bold">Software engineering</h3>
+							<p class="hidden">COURSES</p>
+							<p class="hidden">
+								Web Development, Mobile Development, iOT, APIs
+							</p>
+						</div>
+					</article>
+
+					<article class="pt-4 pb-6 px-4 bg-neutral-300">
+						<picture class="hidden">
+							<img
+								src="../../images/course-computer-art.jpg"
+								alt="Computer art course"
+							/>
+						</picture>
+						<div class="course-content">
+							<h3 class="text-2xl font-bold">Computer art</h3>
+							<p class="hidden">COURSES</p>
+							<p class="hidden">
+								Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+								Computer Animation
+							</p>
+						</div>
+					</article>
+
+					<article class="pt-4 pb-6 px-4 bg-neutral-300">
+						<picture class="hidden">
+							<img src="../../images/course-design.jpg" alt="Design course" />
+						</picture>
+						<div class="course-content">
+							<h3 class="text-2xl font-bold">Design</h3>
+							<p class="hidden">COURSES</p>
+							<p class="hidden">
+								User Experience Design, User Research, Visual Design
+							</p>
+						</div>
+					</article>
+
+					<article class="pt-4 pb-6 px-4 bg-neutral-300">
+						<picture class="hidden">
+							<img src="../../images/course-data.jpg" alt="Data course" />
+						</picture>
+						<div class="course-content">
+							<h3 class="text-2xl font-bold">Data</h3>
+							<p class="hidden">COURSES</p>
+							<p class="hidden">
+								Data Science, Big Data, SQL, Data Visualization
+							</p>
+						</div>
+					</article>
+
+					<article class="pt-4 pb-6 px-4 bg-neutral-300">
+						<picture class="hidden">
+							<img
+								src="../../images/course-business.jpg"
+								alt="Business course"
+							/>
+						</picture>
+						<div class="course-content">
+							<h3 class="text-2xl font-bold">Business</h3>
+							<p class="hidden">COURSES</p>
+							<p class="hidden">
+								Product Development, Business Development, Startup
+							</p>
+						</div>
+					</article>
+
+					<article class="pt-4 pb-6 px-4 bg-neutral-300">
+						<picture class="hidden">
+							<img
+								src="../../images/course-marketing.jpg"
+								alt="Marketing course"
+							/>
+						</picture>
+						<div class="course-content">
+							<h3 class="text-2xl font-bold">Marketing</h3>
+							<p class="hidden">COURSES</p>
+							<p class="hidden">
+								Analytics, Content Marketing, Mobile Marketing
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="bg-neutral-100 border-b-2 border-neutral-200">
+				<h2 class="pt-8 pb-4 text-3xl font-bold text-center">Thesis exhibit</h2>
+
+				<div class="thesis-all">
+					<article class="thesis-main">
+						<video class="pb-6" src="../../videos/thesis.mp4" controls>
+							Reimagine urban
+						</video>
+						<h3 class="hidden">Reimagine urban</h3>
+						<p class="hidden">
+							"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+							commodo lectus, nec consequat neque. Sed non accumsan urna.
+							Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+							dolor consequat, tristique ligula"
+						</p>
+					</article>
+
+					<div class="hidden">
+						<article>
+							<picture>
+								<img src="../../images/thesis-fisma.jpg" alt="Fisma" />
+							</picture>
+							<div class="thesis-side-content">
+								<h3>Fisma: Design and Prototype</h3>
+								<p>Designer showcase of new prototype product</p>
+							</div>
+						</article>
+
+						<article>
+							<picture>
+								<img
+									src="../../images/thesis-now-and-then.jpg"
+									alt="Now and then"
+								/>
+							</picture>
+							<div class="thesis-side-content">
+								<h3>Now and then</h3>
+								<p>Research study about New York</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="bg-neutral-100">
+			<p class="p-4">&copy; 2016 Colmar Academy. All rights reserved</p>
+			<div>
+				<a class="hidden" href="#">Terms</a>
+				<a class="hidden" href="#">Privacy</a>
+			</div>
+		</footer>
+	</body>
 </html>
