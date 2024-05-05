@@ -7,8 +7,317 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <header>
+    <nav>
+      <ul class="md:flex h-16 justify-between hidden">
+        <div class="flex pl-6 items-center">
+          <div>
+            <img src="../../images/ic-logo.svg" alt="logo" />
+          </div>
+          <div class="flex text-2xl">
+            <h2>COLMAR</h2>
+            <h2>ACADEMY</h2>
+          </div>
+        </div>
+        <div class="flex items-center gap-x-4 pr-6">
+          <li class="text-center">On Campus</li>
+          <li class="text-center">Online</li>
+          <li class="text-center">For companies</li>
+          <li class="text-center">Sign in</li>
+        </div>
+      </ul>
+      <ul class="flex w-full h-16 justify-evenly items-center md:hidden">
+        <li><img src="../../images/ic-logo.svg" alt="logo" /></li>
+        <li><img src="../../images/ic-on-campus.svg" alt="campus" /></li>
+        <li><img src="../../images/ic-online.svg" alt="online" /></li>
+        <li><img src="../../images/ic-login.svg" alt="login" /></li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+    <section class="md:flex bg-gray-300">
+      <div class="md:w-3/5">
+        <img
+          class="md:px-6 md:py-8"
+          src="../../images/banner.jpg"
+          alt="banner"
+        />
+      </div>
+      <div class="pl-6 pt-8 pr-6 pb-8 md:w-2/5 md:pt-[200px]">
+        <h1 class="pb-8 text-2xl font-bold">Learn something new everyday</h1>
+        <p class="text-base pb-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <button class="bg-gray-500 text-white py-2 w-full">Start here</button>
+      </div>
+    </section>
+    <section class="w-full flex">
+      <div class="w-3/5 hidden md:block px-6 py-8">
+        <div>
+          <img src="../../images/information-main.jpg" alt="info" />
+        </div>
+        <div>
+          <h2>It doesn't hurt to keep practicing</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+            iure hic rem ratione saepe deleniti optio? Voluptas quam repellendus
+            commodi! Reprehenderit possimus iure unde dolorem eligendi atque
+            quibusdam facilis repudiandae.
+          </p>
+          <p>Emanuel, Sr Strategist</p>
+        </div>
+      </div>
+      <!-- card1 -->
+      <div
+        class="px-4 pt-4 pb-16 items-center md:w-2/5 md:px-0 md:pt-4 md:pb-0 flex-col"
+      >
+        <div class="md:w-full md:flex md:hover:bg-gray-300">
+          <div class="md:w-[35%]">
+            <img
+              class="hidden md:block md:p-4"
+              src="../../images/information-orientation.jpg"
+              alt="orientation"
+            />
+            <img
+              class="md:hidden"
+              src="../../images/information-orientation-mobile.jpg"
+              alt="orientation"
+            />
+          </div>
+          <div class="pl-4 pb-8 md:w-[65%] md:pl-0 md:pb-0 md:pt-8">
+            <h2>Orientation date</h2>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="md:w-full md:flex md:hover:bg-gray-300">
+          <div class="md:w-[35%]">
+            <img
+              class="hidden md:block md:p-4"
+              src="../../images/information-campus.jpg"
+              alt="orientation"
+            />
+            <img
+              class="md:hidden"
+              src="../../images/information-campus-mobile.jpg"
+              alt="orientation"
+            />
+          </div>
+          <div class="pl-4 pb-8 md:w-[65%] md:pl-0 md:pb-0 md:pt-8">
+            <h2>Orientation date</h2>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <!-- card3 -->
+        <div class="md:w-full md:flex md:hover:bg-gray-300">
+          <div class="md:w-[35%]">
+            <img
+              class="hidden md:block md:p-4"
+              src="../../images/information-guest-lecture.jpg"
+              alt="orientation"
+            />
+            <img
+              class="md:hidden"
+              src="../../images/information-guest-lecture-mobile.jpg"
+              alt="orientation"
+            />
+          </div>
+          <div class="pl-4 md:w-[65%] md:pl-0 md:pb-0 md:pt-8">
+            <h2>Orientation date</h2>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section startlearn -->
+    <section>
+      <h2
+        class="text-center text-2xl font-bold pt-8 pb-4 md:bg-gray-300 md:pb-8"
+      >
+        Start learning
+      </h2>
+      <div class="pb-8 pl-4 pr-4 md:hidden">
+        <h2 class="bg-gray-300 pb-6 pt-4 pl-4 mb-2">Software engineering</h2>
+        <h2 class="bg-gray-300 pb-6 pt-4 pl-4 mb-2">Computer art</h2>
+        <h2 class="bg-gray-300 pb-6 pt-4 pl-4 mb-2">Design</h2>
+        <h2 class="bg-gray-300 pb-6 pt-4 pl-4 mb-2">Data</h2>
+        <h2 class="bg-gray-300 pb-6 pt-4 pl-4 mb-2">Business</h2>
+        <h2 class="bg-gray-300 pb-6 pt-4 pl-4">Marketing</h2>
+      </div>
+      <!-- Section3 desktop -->
+      <div class="hidden md:block">
+        <div
+          class="w-full flex justify-between pl-[72px] pr-[72px] pb-8 bg-gray-300"
+        >
+          <!-- card01 -->
+          <div class="w-[30%] bg-white">
+            <div>
+              <img src="../../images/course-software.jpg" alt="Software" />
+            </div>
+            <div class="pl-4 pb-6">
+              <h2 class="pt-4">Software engineering</h2>
+              <p class="pt-2">COURSE</p>
+              <p class="pt-2">Web Development,Mobile Development,iOT,APIs</p>
+            </div>
+          </div>
+          <!-- card02 -->
+          <div class="w-[30%] bg-white">
+            <div>
+              <img src="../../images/course-computer-art.jpg" alt="Software" />
+            </div>
+            <div class="pl-4 pb-6">
+              <h2 class="pt-4">Computer art</h2>
+              <p class="pt-2">COURSE</p>
+              <p class="pt-2">
+                imagine & design,web design,motion graphics & visual effects,
+                computer animation
+              </p>
+            </div>
+          </div>
+          <!-- card03 -->
+          <div class="w-[30%] bg-white">
+            <div>
+              <img src="../../images/course-design.jpg" alt="Software" />
+            </div>
+            <div class="pl-4 pb-6">
+              <h2 class="pt-4">Design</h2>
+              <p class="pt-2">COURSE</p>
+              <p class="pt-2">
+                User Experience Design, User Research, Visual Design
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full flex justify-between pl-[72px] pr-[72px] pb-8 bg-gray-300"
+        >
+          <!-- card01 -->
+          <div class="w-[30%] bg-white">
+            <div>
+              <img src="../../images/course-data.jpg" alt="Software" />
+            </div>
+            <div class="pl-4 pb-6">
+              <h2 class="pt-4">Data</h2>
+              <p class="pt-2">COURSE</p>
+              <p class="pt-2">
+                Data Science, Big Data, SQL, Data Visualization
+              </p>
+            </div>
+          </div>
+          <!-- card02 -->
+          <div class="w-[30%] bg-white">
+            <div>
+              <img src="../../images/course-business.jpg" alt="Software" />
+            </div>
+            <div class="pl-4 pb-6">
+              <h2 class="pt-4">Business</h2>
+              <p class="pt-2">COURSE</p>
+              <p class="pt-2">
+                Product Development, Business Development, Startup
+              </p>
+            </div>
+          </div>
+          <!-- card03 -->
+          <div class="w-[30%] bg-white">
+            <div>
+              <img src="../../images/course-marketing.jpg" alt="Software" />
+            </div>
+            <div class="pl-4 pb-6">
+              <h2 class="pt-4">Marketing</h2>
+              <p class="pt-2">COURSE</p>
+              <p class="pt-2">Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section4 -->
+    <section>
+      <h2 class="px-8 pt-8 pb-4 text-center text-2xl">Thesis exhibits</h2>
+      <div class="w-full md:flex hidden">
+        <div class="w-3/5 px-6">
+          <div class="w-full">
+            <video controls src="../../videos/thesis.mp4" type="mp4"></video>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold pt-6">Reimagine urban</h2>
+            <p class="pt-2 pb-32">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repudiandae molestias, facere distinctio laborum assumenda nihil
+              deleniti. Quas, vero nemo aspernatur reprehenderit voluptas
+              assumenda enim error porro. Delectus consequatur repellat
+              reprehenderit!
+            </p>
+          </div>
+        </div>
+        <div
+          class="px-4 pb-16 items-center md:w-2/5 md:px-0 md:pb-0 md:flex-col"
+        >
+          <div class="md:w-full md:flex md:hover:bg-gray-300">
+            <div class="md:w-[35%]">
+              <img
+                class="hidden md:block md:p-4"
+                src="../../images/information-orientation.jpg"
+                alt="orientation"
+              />
+              <img
+                class="md:hidden"
+                src="../../images/information-orientation-mobile.jpg"
+                alt="orientation"
+              />
+            </div>
+            <div class="pl-4 pb-8 md:w-[65%] md:pl-0 md:pb-0 md:pt-8">
+              <h2>Orientation date</h2>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="md:w-full md:flex md:hover:bg-gray-300">
+            <div class="md:w-[35%]">
+              <img
+                class="hidden md:block md:p-4"
+                src="../../images/information-campus.jpg"
+                alt="orientation"
+              />
+              <img
+                class="md:hidden"
+                src="../../images/information-campus-mobile.jpg"
+                alt="orientation"
+              />
+            </div>
+            <div class="pl-4 pb-8 md:w-[65%] md:pl-0 md:pb-0 md:pt-8">
+              <h2>Orientation date</h2>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="md:hidden">
+        <video
+          controls
+          class="pb-6"
+          src="../../videos/thesis.mp4"
+          type="mp4"
+        ></video>
+      </div>
+    </section>
   </body>
+  <footer>
+    <div class="md:hidden">
+      <p class="text-xs py-4 pl-4">
+        &COPY;2016 Colmar Academy. All right reserved
+      </p>
+    </div>
+    <div class="hidden md:flex md:justify-between px-6 pt-4 pb-16">
+      <p class="text-xs">&COPY;2016 Colmar Academy. All right reserved</p>
+      <p class="text-xs">Terms Privacy</p>
+    </div>
+  </footer>
 </html>
