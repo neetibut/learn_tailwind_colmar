@@ -1,253 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer's Pathway</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <header class="h-16 items-center">
-      <nav class="flex justify-between px-6 h-16 items-center md:hidden">
-        <i><img src="..\..\images\ic-logo.svg" /></i>
-        <i><img src="..\..\images\ic-online.svg" /></i>
-        <i><img src="..\..\images\ic-on-campus.svg" /></i>
-        <i><img src="..\..\images\ic-login.svg" /></i>
-      </nav>
-      <nav class="hidden md:flex justify-between px-6 h-16">
-        <div class="flex items-center">
-          <a href="#" class="flex items-center">
-            <i> <img src="..\..\images\ic-logo.svg" /> </i>
-            <p><stong class="font-bold">COLMAR</stong>ACADEMY</p>
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer's Pathway</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="h-16 items-center">
+    <nav class="flex justify-between px-6 h-16 items-center md:hidden">
+      <i><img src="..\..\images\ic-logo.svg" /></i>
+      <i><img src="..\..\images\ic-online.svg" /></i>
+      <i><img src="..\..\images\ic-on-campus.svg" /></i>
+      <i><img src="..\..\images\ic-login.svg" /></i>
+    </nav>
+    <nav class="hidden md:flex justify-between px-6 h-16">
+      <div class="flex items-center">
+        <a href="#" class="flex items-center">
+          <i> <img src="..\..\images\ic-logo.svg" /> </i>
+          <p>
+            <stong class="font-bold">COLMAR</stong>ACADEMY
+          </p>
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-lg">On campus</a>
+        <a href="#" class="text-lg">Online</a>
+        <a href="#" class="text-lg">For companies</a>
+        <a href="#" class="text-lg">Sign in</a>
+      </div>
+    </nav>
+  </header>
+  <main class="pb-6 md:pd-8">
+    <section class="bg-gray-300 md:flex items-center" id="hero">
+      <div class="flex justify-center md:mx-6 md:my-8">
+        <img src="..\..\images\banner.jpg" />
+      </div>
+      <div class="px-4">
+        <h1 class="my-8 text-3xl font-bold">Learn something new everyday</h1>
+        <h2 class="b-6 my-6 font-medium text-xl">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </h2>
+        <button class="font-medium bg-gray-400 mb-8 py-3 w-full text-white hover:bg-gray-500">
+          Start here
+        </button>
+      </div>
+    </section>
+    <section class="pt-4 px-4 flex flex-col items-center md:flex-row md:items-start md:py-8 md:px-0" id="information">
+      <div id="information_left" class="hidden md:flex flex-col px-6 w-7/12">
+        <div class="pb-8">
+          <img src="..\..\images\information-main.jpg" />
         </div>
-        <div class="flex items-center space-x-4">
-          <a href="#" class="text-lg">On campus</a>
-          <a href="#" class="text-lg">Online</a>
-          <a href="#" class="text-lg">For companies</a>
-          <a href="#" class="text-lg">Sign in</a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="bg-gray-300 md:flex items-center" id="hero">
-        <div class="flex justify-center md:mx-6 md:my-8">
-          <img src="..\..\images\banner.jpg" />
-        </div>
-        <div class="px-4">
-          <h1 class="my-8 text-3xl font-bold">Learn something new everyday</h1>
-          <h2 class="b-6 my-6 font-medium text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <div>
+          <h2 class="text-3xl font-bold pb-6">
+            It doesn't hurt to keep praticing
           </h2>
-          <button
-            class="font-medium bg-gray-400 mb-8 py-3 w-full text-white hover:bg-gray-500"
-          >
-            Start here
-          </button>
+          <p>
+            "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+            commodo lectus, nec consequat neque. Sed non accumsan urna.
+            Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+            dolor consequat, tristique ligula."
+          </p>
+          <p class="pt-6">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
-      </section>
-      <section
-        class="pt-4 px-4 flex flex-col items-center md:flex-row md:items-start md:py-8 md:px-0"
-        id="information"
-      >
-        <div id="information_left" class="hidden md:flex flex-col px-6 w-7/12">
-          <div class="pb-8">
-            <img src="..\..\images\information-main.jpg" />
+      </div>
+      <div id="information_right" class="md:w-5/12">
+        <div class="hover:bg-gray-300 md:flex md:items-center">
+          <div class="md:h-full">
+            <img class="md:hidden" src="..\..\images\information-orientation-mobile.jpg" />
+            <img class="hidden md:flex w-full p-6" src="..\..\images\information-orientation.jpg" />
           </div>
-          <div>
-            <h2 class="text-3xl font-bold pb-6">
-              It doesn't hurt to keep praticing
-            </h2>
+          <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
+            <h2 class="text-xl font-medium">Orientation date</h2>
+            <p>Tue 10/11 & Wed 10/12 : 8am-3pm</p>
+            <a href="#" class="text-cyan-600">Read more</a>
+          </div>
+        </div>
+        <div class="hover:bg-gray-300 md:flex md:items-center">
+          <div class="md:h-full">
+            <img class="md:hidden" src="..\..\images\information-campus-mobile.jpg" />
+            <img class="hidden md:flex w-full p-6" src="..\..\images\information-campus.jpg" />
+          </div>
+          <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
+            <h2 class="text-xl font-medium">Our campus</h2>
+            <p>Find which campus is close by you</p>
+            <a href="#" class="text-cyan-600">Read more</a>
+          </div>
+        </div>
+        <div class="hover:bg-gray-300 md:flex md:items-center">
+          <div class="md:h-full">
+            <img class="md:hidden" src="..\..\images\information-guest-lecture-mobile.jpg" />
+            <img class="hidden md:flex w-full p-6" src="..\..\images\information-guest-lecture.jpg" />
+          </div>
+          <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
+            <h2 class="text-xl font-medium">Special guest lecture</h2>
             <p>
+              Join a keynote with Oliver Sack about music in medical treatment
+            </p>
+            <a href="#" class="text-cyan-600">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="course" class="p-4 md:bg-slate-200">
+      <div class="flex justify-center pt-8 pb-4">
+        <h2 class="text-3xl font-bold">Start learning</h2>
+      </div>
+      <div id="course_card" class="my-4 w-full grid grid-cols-1 gap-2 md:grid md:grid-cols-3 md:gap-8">
+        <div class="md:bg-white hover:bg-slate-300">
+          <img class="hidden md:block md:w-full" src="..\..\images\course-software.jpg" />
+          <div>
+            <h3 class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300">
+              Software engineering
+            </h3>
+            <p class="text-lg hidden md:block px-4">COURSE</p>
+            <p class="px-4 mt-2 mb-6 hidden md:block">
+              Web Development, Mobile Development. iOT, APIs
+            </p>
+          </div>
+        </div>
+        <div class="md:bg-white hover:bg-slate-300">
+          <img class="hidden md:block md:w-full" src="..\..\images\course-computer-art.jpg" />
+          <div>
+            <h3 class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300">
+              Computer art
+            </h3>
+            <p class="text-lg hidden md:block px-4">COURSE</p>
+            <p class="px-4 mt-2 mb-6 hidden md:block">
+              Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+              Computer Animation
+            </p>
+          </div>
+        </div>
+        <div class="md:bg-white hover:bg-slate-300">
+          <img class="hidden md:block md:w-full" src="..\..\images\course-design.jpg" />
+          <div>
+            <h3 class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300">
+              Design
+            </h3>
+            <p class="text-lg hidden md:block px-4">COURSE</p>
+            <p class="px-4 mt-2 mb-6 hidden md:block">
+              User Experience Design, User Research, Visual Design
+            </p>
+          </div>
+        </div>
+        <div class="md:bg-white hover:bg-slate-300">
+          <img class="hidden md:block md:w-full" src="..\..\images\course-data.jpg" />
+          <div>
+            <h3 class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300">
+              Data
+            </h3>
+            <p class="text-lg hidden md:block px-4">COURSE</p>
+            <p class="px-4 mt-2 mb-6 hidden md:block">
+              Data Science, Big Data, SQL,Data Visualization
+            </p>
+          </div>
+        </div>
+        <div class="md:bg-white hover:bg-slate-300">
+          <img class="hidden md:block md:w-full" src="..\..\images\course-business.jpg" />
+          <div>
+            <h3 class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300">
+              Business
+            </h3>
+            <p class="text-lg hidden md:block px-4">COURSE</p>
+            <p class="px-4 mt-2 mb-6 hidden md:block">
+              Product Development, Business Development, Startup
+            </p>
+          </div>
+        </div>
+        <div class="md:bg-white hover:bg-slate-300">
+          <img class="hidden md:block md:w-full" src="..\..\images\course-marketing.jpg" />
+          <div>
+            <h3 class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300">
+              Marketing
+            </h3>
+            <p class="text-lg hidden md:block px-4">COURSE</p>
+            <p class="px-4 mt-2 mb-6 hidden md:block">
+              Analytics, Content Marketing, Mobile Marketing
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="thesis">
+      <div class="flex justify-center py-8">
+        <h2 class="text-3xl font-bold">Thesis exhibit</h2>
+      </div>
+      <div class="flex">
+        <div class="md:pl-6 md:w-3/5">
+          <video controls class="w-full">
+            <source src="..\..\videos\thesis.mp4" />
+          </video>
+          <div class="hidden md:block">
+            <h3 class="pt-6">Reimagine urban</h3>
+            <p class="pb-8 pt-2">
               "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
               commodo lectus, nec consequat neque. Sed non accumsan urna.
               Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
               dolor consequat, tristique ligula."
             </p>
-            <p class="pt-6">Emanuel, Sr Strategist at Hiring.com</p>
           </div>
         </div>
-        <div id="information_right" class="md:w-5/12">
-          <div class="hover:bg-gray-300 md:flex md:items-center">
-            <div class="md:h-full">
-              <img
-                class="md:hidden"
-                src="..\..\images\information-orientation-mobile.jpg"
-              />
-              <img
-                class="hidden md:flex w-full p-6"
-                src="..\..\images\information-orientation.jpg"
-              />
+        <div class="hidden md:block w-2/5">
+          <div class="hover:bg-gray-300 flex">
+            <div>
+              <img class="hidden md:flex w-full p-6" src="..\..\images\thesis-fisma.jpg" />
             </div>
             <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
-              <h2 class="text-xl font-medium">Orientation date</h2>
-              <p>Tue 10/11 & Wed 10/12 : 8am-3pm</p>
-              <a href="#" class="text-cyan-600">Read more</a>
-            </div>
-          </div>
-          <div class="hover:bg-gray-300 md:flex md:items-center">
-            <div class="md:h-full">
-              <img
-                class="md:hidden"
-                src="..\..\images\information-campus-mobile.jpg"
-              />
-              <img
-                class="hidden md:flex w-full p-6"
-                src="..\..\images\information-campus.jpg"
-              />
-            </div>
-            <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
-              <h2 class="text-xl font-medium">Our campus</h2>
-              <p>Find which campus is close by you</p>
-              <a href="#" class="text-cyan-600">Read more</a>
-            </div>
-          </div>
-          <div class="hover:bg-gray-300 md:flex md:items-center">
-            <div class="md:h-full">
-              <img
-                class="md:hidden"
-                src="..\..\images\information-guest-lecture-mobile.jpg"
-              />
-              <img
-                class="hidden md:flex w-full p-6"
-                src="..\..\images\information-guest-lecture.jpg"
-              />
-            </div>
-            <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
-              <h2 class="text-xl font-medium">Special guest lecture</h2>
+              <h2 class="text-xl font-medium">Fisma:Design and Prototype</h2>
               <p>
-                Join a keynote with Oliver Sack about music in medical treatment
-              </p>
-              <a href="#" class="text-cyan-600">Read more</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="course" class="p-4 md:bg-slate-200">
-        <div class="flex justify-center pt-8 pb-4">
-          <h2 class="text-3xl font-bold">Start learning</h2>
-        </div>
-        <div
-          id="course_card"
-          class="my-4 w-full grid grid-cols-1 gap-2 md:grid md:grid-cols-3 md:gap-8"
-        >
-          <div class="md:bg-white hover:bg-slate-300">
-            <img
-              class="hidden md:block md:w-full"
-              src="..\..\images\course-software.jpg"
-            />
-            <div>
-              <h3
-                class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300"
-              >
-                Software engineering
-              </h3>
-              <p class="text-lg hidden md:block px-4">COURSE</p>
-              <p class="px-4 mt-2 mb-6 hidden md:block">
-                Web Development, Mobile Development. iOT, APIs
+                Designer showcase of new prototype product
               </p>
             </div>
           </div>
-          <div class="md:bg-white hover:bg-slate-300">
-            <img
-              class="hidden md:block md:w-full"
-              src="..\..\images\course-computer-art.jpg"
-            />
+          <div class="hover:bg-gray-300 flex">
             <div>
-              <h3
-                class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300"
-              >
-                Computer art
-              </h3>
-              <p class="text-lg hidden md:block px-4">COURSE</p>
-              <p class="px-4 mt-2 mb-6 hidden md:block">
-                Imaging & Design, Web Design, Motion Graphics & Visual Effects,
-                Computer Animation
-              </p>
+              <img class="hidden md:flex w-full p-6" src="..\..\images\thesis-now-and-then.jpg" />
             </div>
-          </div>
-          <div class="md:bg-white hover:bg-slate-300">
-            <img
-              class="hidden md:block md:w-full"
-              src="..\..\images\course-design.jpg"
-            />
-            <div>
-              <h3
-                class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300"
-              >
-                Design
-              </h3>
-              <p class="text-lg hidden md:block px-4">COURSE</p>
-              <p class="px-4 mt-2 mb-6 hidden md:block">
-                User Experience Design, User Research, Visual Design
-              </p>
-            </div>
-          </div>
-          <div class="md:bg-white hover:bg-slate-300">
-            <img
-              class="hidden md:block md:w-full"
-              src="..\..\images\course-data.jpg"
-            />
-            <div>
-              <h3
-                class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300"
-              >
-                Data
-              </h3>
-              <p class="text-lg hidden md:block px-4">COURSE</p>
-              <p class="px-4 mt-2 mb-6 hidden md:block">
-                Data Science, Big Data, SQL,Data Visualization
-              </p>
-            </div>
-          </div>
-          <div class="md:bg-white hover:bg-slate-300">
-            <img
-              class="hidden md:block md:w-full"
-              src="..\..\images\course-business.jpg"
-            />
-            <div>
-              <h3
-                class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300"
-              >
-                Business
-              </h3>
-              <p class="text-lg hidden md:block px-4">COURSE</p>
-              <p class="px-4 mt-2 mb-6 hidden md:block">
-                Product Development, Business Development, Startup
-              </p>
-            </div>
-          </div>
-          <div class="md:bg-white hover:bg-slate-300">
-            <img
-              class="hidden md:block md:w-full"
-              src="..\..\images\course-marketing.jpg"
-            />
-            <div>
-              <h3
-                class="font-bold text-xl bg-gray-400 pt-4 pb-6 px-4 md:bg-inherit hover:bg-slate-300"
-              >
-                Marketing
-              </h3>
-              <p class="text-lg hidden md:block px-4">COURSE</p>
-              <p class="px-4 mt-2 mb-6 hidden md:block">
-                Analytics, Content Marketing, Mobile Marketing
+            <div class="pt-4 pl-4 pb-6 w-2/3 space-y-3">
+              <h2 class="text-xl font-medium">Now and then</h2>
+              <p>
+                Research study about New York
               </p>
             </div>
           </div>
         </div>
-      </section>
-      <section id="thesis">
-        <div class="flex justify-center py-8">
-          <h2 class="text-3xl font-bold">Thesis exhibit</h2>
-        </div>
-        <div class="">
-          <video controls class="w-full">
-            <source src="..\..\videos\thesis.mp4" />
-          </video>
-        </div>
-      </section>
-    </main>
-  </body>
+    </section>
+  </main>
+  <footer class="flex justify-between pb-4 md:border-solid md:border-black md:border-t">
+    <h2 class="px-6 pt-4">© 2016 Colmar Academy. All rights reserved</h2>
+    <div class="px-6 pt-4 md:flex gap-4 hidden">
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+  </footer>
+</body>
+
 </html>
