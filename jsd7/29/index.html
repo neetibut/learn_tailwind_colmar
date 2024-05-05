@@ -47,7 +47,7 @@
     </section>
 
     <!-- information section -->
-    <section class="md:flex h-full " id="hero">
+    <section class="md:flex h-full " id="info">
       <!-- info frist -->
       <div class="hidden md:block px-6 py-8 w-3/5 h-full">
         <img src="/learn_tailwind_colmar/images/information-main.jpg" alt="main">
@@ -90,7 +90,7 @@
         <!-- Our guest lecture -->
         <div class="md:flex  hover:bg-zinc-300 py-4 px-4">
           <img class="hidden md:block w-2/6" src="/learn_tailwind_colmar/images/information-guest-lecture.jpg" alt=" Our guest lecture"> 
-          <img class="md:hidden w-full" src="/learn_tailwind_colmar/images/information-campus-mobile.jpg" alt=" Our guest lecture"> 
+          <img class="md:hidden w-full" src="/learn_tailwind_colmar/images/information-guest-lecture-mobile.jpg" alt=" Our guest lecture"> 
           <div class="flex-col content-center ml-4">
             <h3 class="mt-8 text-3xl font-medium">
               Our guest lecture
@@ -101,9 +101,143 @@
             <a href="#" class=" text-xl text-sky-500">Read more</a>
           </div>
         </div>
-
       </div>
     </section>
+
+    <!-- Start learning section -->
+    <section class="w-full py-8 md:bg-zinc-300" id="cours ">
+      <h2 class="text-center text-4xl font-semibold">Start learning</h2>
+
+      <!-- courese mobile -->
+      <div class="md:hidden px-4 pt-4 pb-8">
+        <h3 class="bg-zinc-300 text-3xl font-semibold px-4 pt-4 pb-6 mb-2">Software engineering</h3>
+        <h3 class="bg-zinc-300 text-3xl font-semibold px-4 pt-4 pb-6 mb-2">Computer art</h3>
+        <h3 class="bg-zinc-300 text-3xl font-semibold px-4 pt-4 pb-6 mb-2">Design</h3>
+        <h3 class="bg-zinc-300 text-3xl font-semibold px-4 pt-4 pb-6 mb-2">Data</h3>
+        <h3 class="bg-zinc-300 text-3xl font-semibold px-4 pt-4 pb-6 mb-2">Business</h3>
+        <h3 class="bg-zinc-300 text-3xl font-semibold px-4 pt-4 pb-6 mb-2">Marketing</h3>
+      </div>
+
+      <!-- courese desktop-->
+      <div class="hidden md:block" id=card>
+        <!-- frist box -->
+        <div class="flex mx-[72px] my-8" id="card-frist">
+          <!-- Software engineering courses -->
+          <div class="bg-white">
+            <img  src="/learn_tailwind_colmar/images/course-software.jpg" alt="software engineering courses">
+            <h3 class="mx-4 mt-4 mb-2 text-3xl font-medium">Software engineering </h3>
+            <span class="mx-4 mb-2 text-2xl">COURESE</span>
+            <p class="mx-4 mb-6 text-xl">
+              Wed Deverlopment, Mobile <br> Deverlopment, iOT, APLs 
+            </p>
+          </div>
+          <!-- computer art courses -->
+          <div class="bg-white mx-8">
+            <img  src="/learn_tailwind_colmar/images/course-computer-art.jpg" alt="Computer art courses">
+            <h3 class="mx-4 mt-4 mb-2 text-3xl font-medium">Computer art </h3>
+            <span class="mx-4 mb-2 text-2xl">COURESE</span>
+            <p class="mx-4 mb-6 text-xl">
+              Imaging & Design, wed Design,<br> Motion Graphics & Visual Effects, <br>Computer Animation 
+            </p>
+          </div>
+
+          <!-- Design courses -->
+          <div class="bg-white">
+            <img  src="/learn_tailwind_colmar/images/course-design.jpg" alt="Design courses">
+            <h3 class="mx-4 mt-4 mb-2 text-3xl font-medium">Design </h3>
+            <span class="mx-4 mb-2 text-2xl">COURESE</span>
+            <p class="mx-4 mb-6 text-xl">
+              User Experience Design, User <br>Research, Visual Design
+            </p>
+          </div> 
+      </div> 
+      
+      <!--second box -->
+      <div class="flex mx-[72px] mb-8" id="card-second">
+        <!-- data courses -->
+        <div class="bg-white">
+          <img  src="/learn_tailwind_colmar/images/course-data.jpg" alt="Data courses">
+          <h3 class="mx-4 mt-4 mb-2 text-3xl font-medium">Data </h3>
+          <span class="mx-4 mb-2 text-2xl">COURESE</span>
+          <p class="mx-4 mb-6 text-xl">
+            Data Science, Big Data, SQL, Data<br> Visualization 
+          </p>
+        </div>
+
+        <!-- business courses -->
+        <div class="bg-white mx-8">
+          <img  src="/learn_tailwind_colmar/images/course-business.jpg" alt="Business courses">
+          <h3 class="mx-4 mt-4 mb-2 text-3xl font-medium">Business</h3>
+          <span class="mx-4 mb-2 text-2xl">COURESE</span>
+          <p class="mx-4 mb-6 text-xl">
+            Product Development, Businness <br> Development, Startup 
+          </p>
+        </div>
+
+        <!-- marketing courses -->
+        <div class="bg-white">
+          <img  src="/learn_tailwind_colmar/images/course-design.jpg" alt="Marketing  courses">
+          <h3 class="mx-4 mt-4 mb-2 text-3xl font-medium">Marketing</h3>
+          <span class="mx-4 mb-2 text-2xl">COURESE</span>
+          <p class="mx-4 mb-6 text-xl">
+            Analytics, Content Marketing, <br>Mobile Marketing
+          </p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- thesis exhibit -->
+    <section class=" w-full md:flex  bg-white " id="hero">
+      <!-- thesis video -->
+      <div class="md:px-6 md:py-8 md:w-3/5">
+        <video autoplay><source src="/learn_tailwind_colmar/videos/thesis.mp4" type="video/mp4"></video>
+        <h2  class="mt-8 mb-6 text-4xl font-semibold hidden md:block">Reimagine urban</h2>
+        <p class="mb-8 text-xl hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, praesentium! Blanditiis assumenda sit alias repudiandae, pariatur accusamus. Magnam, minima aut nobis aperiam, cumque et, sunt fugit molestiae unde illum dignissimos iure?</p>
+      </div>
+        
+      <!-- thesis fisma -->
+      <div class="md:w-2/5 pt-8 hidden md:block">
+        <div class="md:flex hover:bg-zinc-300 py-4 px-4">
+          <img class="w-2/6" src="/learn_tailwind_colmar/images/thesis-fisma.jpg" alt="Fisma: Design and Prototype"> 
+          <div class="flex-col content-center ml-4">
+            <h3 class="mt-8 text-3xl font-medium">
+              Fisma: Design and Prototype
+            </h3>
+            <p class="my-2 text-xl text-zinc-700">
+              Designer showcase of naw<br> prototype product
+            </p>
+          </div>
+        </div>
+
+        <!--now and than -->
+        <div class="md:flex  hover:bg-zinc-300 py-4 px-4">
+          <img class="w-2/6" src="/learn_tailwind_colmar/images/thesis-now-and-then.jpg" alt="Now and than"> 
+          <div class="flex-col content-center ml-4">
+            <h3 class="mt-8 text-3xl font-medium">
+              Now and than
+            </h3>
+            <p class="my-2 text-xl text-zinc-700">
+              Research study about New York
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer credit and support -->
+    <footer class="border-solid border-2 flex justify-between px-6 pt-4 pb-16">
+      <p>© 2016 Colmar Acadamy. All rghts reserved</p>
+      <div">
+        <span>Terms</span>
+        <span class="mx-6">Privacy</span>
+      </div>
+    </footer>
+
   </main>
 </body>
 </html>
+    
+    
+
+
