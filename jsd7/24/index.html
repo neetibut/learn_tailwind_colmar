@@ -10,25 +10,25 @@
   </head>
   <body>
     <header>
-      <div class="hidden">
-      <div class="flex justify-between px-6 text-2xl"> <!-- logo section-->
-        <a href="#" class="flex flex-row flex-wrap items-center">
-          <img class="h-16" src="../../images/ic-logo.svg">
-          <p>Colmar <span class="font-bold">Academy</span></p>
-        </a>
-      </div>
-      </div>
+      <div class="flex flex-row justify-between items-center px-6 pt-6 pb-4">
+        <div class="hidden sm:block text-2xl"> <!-- logo section-->
+          <a href="#" class="flex flex-row flex-wrap items-center">
+            <img class="h-12" src="../../images/ic-logo.svg">
+            <p>Colmar <span class="font-bold">Academy</span></p>
+          </a>
+        </div>
       <nav>
-        <div class="hidden">
-            <ul class="flex flex-row pt-4 gap-4">
+        <div class="hidden sm:block">
+            <ul class="flex flex-row gap-4 text-2xl">
               <li><a href="#">Campus</a></li>
               <li><a href="#">Online</a></li>
               <li><a href="#">Our companies</a></li>
               <li><a href="#">Sign in</a></li>
             </ul>
         </div>
-          <div class="h-16">
-          <ul class="flex justify-around pt-4">
+      </div>
+          <div class="">
+          <ul class="flex justify-between gap-4 px-6 pb-4 md:hidden">
             <li><a href="#"><img src="../../images/ic-logo.svg"></a></li>
             <li><a href="#"><img src="../../images/ic-on-campus.svg"></a></li>
             <li><a href="#"><img src="../../images/ic-online.svg"></a></li>
@@ -38,12 +38,94 @@
       </nav>
     </header>
     <main>
-      <section id="hero">
-        <div><img src="../../images/banner.jpg"</div>
-        <div class="bg-gray-300">
-          <div class="text-5xl font-bold text-gray-600 px-4 pt-8"><h1>Learn something new everyday</h1></div>
-          <div class="text-xl font-bold text-gray-600 px-4 pt-8"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-          <div class="flex justify-center pt-6 pb-8"><button class="w-48 bg-gray-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded">Start here</button></div>
+      <section id="hero" class="flex">
+        <div class="md:flex flex-row bg-gray-300">  
+        <img class=" md:w-3/5 px-6 py-6" src="../../images/banner.jpg">
+          <div class="content-center bg-gray-300 pt-8">
+            <h1 class="text-5xl font-bold text-gray-600 px-4 ">Learn something new everyday</h1>
+            <div><h2 class="text-2xl font-bold text-gray-600 px-4 pt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+            <div class="flex justify-center pt-6 pb-8"><button class="w-48 bg-gray-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded">Start here</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="information">
+        <div class="md:w-3/5 hidden sm:block">
+          <img src="../../images/information-main.jpg">
+          <div class="bg-gray-300 text-gray-600">
+            <h2 class="text-2xl font-bold">It doesn't hurt to keep practicing</h2>
+                <p>Aenean turpis turpis, lacinia vel mi sit amet, auctor ultrices felis. Mauris nec est ligula.</p>
+                <br>
+                <a href="#"><p>Emanul, Sr Strategist at Hiring.com</p></a>
+          </div>
+        </div>
+        <div class="flex flex-col px-4 pt-4">
+          <div>
+          <img class="hidden sm:block" src="../../images/information-orientation.jpg" alt="orientation">
+          <img class="md:hidden" src="../../images/information-orientation-mobile.jpg" alt="orientation">
+          <div class="p-4 pb-8">
+            <h3 class="text-2xl font-bold text-gray-600">Orientation date</h3>
+            <p class="text-gray-600">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a class="text-blue-400" href="#">Read more</a>
+          </div>
+          <div>
+            <img class="hidden sm:block" src="../../images/information-campus.jpg" alt="campus">
+            <img class="md:hidden" src="../../images/information-campus-mobile.jpg" alt="campus">
+            <div class="p-4 pb-8">
+              <h3 class="text-2xl font-bold text-gray-600">Our campus</h3>
+              <p class="text-gray-600">Find which campus is close by you</p>
+              <a class="text-blue-400" href="#">Read more</a>
+            </div>
+            <div>
+              <img class="hidden sm:block" src="../../images/information-guest-lecture.jpg" alt="guest-lecture">
+              <img class="md:hidden" src="../../images/information-guest-lecture-mobile.jpg" alt="guest-lecture">
+              <div class="p-4 pb-8">
+                <h3 class="text-2xl font-bold text-gray-600">Specical quest lecture</h3>
+                <p class="text-gray-600">Join a keynote with Oliver Snack about music in medical treatment</p>
+                <a class="text-blue-400" href="#">Read more</a>
+              </div>
+        </div>
+        </div>
+      </section>
+      <section id="course">
+        <div class="flex flex-col gap-2 px-2">
+          <div class="text-3xl font-bold text-center pt-6 pb-4 text-gray-600"><h1>Start learning</h1></div>
+          <div><a href="#">
+            <div><img class="hidden sm:block" src="../../images/course-software.jpg" alt="Software engineering"></div>
+            <div class="h-18 pt-4 pb-6 px-4 bg-gray-300"><h3 class="text-2xl font-bold text-gray-600">Software engineering</h3></div>
+            <h3 class="hidden sm:block text-gray-600">COURESES</h3>
+            <p class="hidden sm:block text-gray-600">Website Development, Mobile Development, iOT, APIs</p>
+          </a></div>
+          <div><a href="#">
+            <div><img class="hidden sm:block" src="../../images/course-software.jpg" alt="Computer art"></div>
+            <div class="h-18 pt-4 pb-6 px-4 bg-gray-300"><h3 class="text-2xl font-bold text-gray-600">Computer art</h3></div>
+            <h3 class="hidden sm:block text-gray-600">COURESES</h3>
+            <p class="hidden sm:block text-gray-600">Imaging & Design, Web Design, Motion Graphics & Visual Effect, Computer Animation</p>
+          </a></div>
+          <div><a href="#">
+            <div><img class="hidden sm:block" src="../../images/course-software.jpg" alt="design"></div>
+            <div class="h-18 pt-4 pb-6 px-4 bg-gray-300"><h3 class="text-2xl font-bold text-gray-600">Design</h3></div>
+            <h3 class="hidden sm:block text-gray-600">COURESES</h3>
+            <p class="hidden sm:block text-gray-600">User Experience Design, User Research, Visual Design</p>
+          </a></div>
+          <div><a href="#">
+            <div><img class="hidden sm:block" src="../../images/course-software.jpg" alt="data"></div>
+            <div class="h-18 pt-4 pb-6 px-4 bg-gray-300"><h3 class="text-2xl font-bold text-gray-600">Data</h3></div>
+            <h3 class="hidden sm:block text-gray-600">COURESES</h3>
+            <p class="hidden sm:block text-gray-600">Data Science, Big Data, SQL, Data Visualization</p>
+          </a></div>
+          <div><a href="#">
+            <div><img class="hidden sm:block" src="../../images/course-software.jpg" alt="business"></div>
+            <div class="h-18 pt-4 pb-6 px-4 bg-gray-300"><h3 class="text-2xl font-bold text-gray-600">Business</h3></div>
+            <h3 class="hidden sm:block text-gray-600">COURESES</h3>
+            <p class="hidden sm:block text-gray-600">Product Development, Business Development, Startup</p>
+          </a></div>
+          <div><a href="#">
+            <div><img class="hidden sm:block" src="../../images/course-software.jpg" alt="marketing"></div>
+            <div class="h-18 pt-4 pb-6 px-4 bg-gray-300"><h3 class="text-2xl font-bold text-gray-600">Marketing</h3></div>
+            <h3 class="hidden sm:block text-gray-600">COURESES</h3>
+            <p class="hidden sm:block text-gray-600">Analytics, Content Marketing, Mobile Marketing</p>
+          </a></div>
         </div>
       </section>
     </main>
