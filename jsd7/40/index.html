@@ -8,7 +8,385 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+    <header>
+      <nav class="flex w-full h-[64px]">
+        <!--nav mobile-->
+        <ul
+          class="flex w-full justify-between items-center bg-red-200 px-4 md:hidden"
+        >
+          <li>
+            <img src="../../images/ic-logo.svg" />
+          </li>
+          <li>
+            <img src="../../images/ic-on-campus.svg" />
+          </li>
+          <li>
+            <img src="../../images/ic-online.svg" />
+          </li>
+          <li>
+            <img src="../../images/ic-login.svg" />
+          </li>
+        </ul>
+
+        <!--nav Desktop-->
+        <div class="h-[64px] bg-blue-300 w-full hidden md:flex justify-between">
+          <div class="flex items-center pl-6">
+            <img src="../../images/ic-logo.svg" /><span class="font-bold"
+              >COLMAR</span
+            >
+            <span class="font-normal">ACADEMY</span>
+          </div>
+          <div class="flex items-center pr-6">
+            <ul class="flex gap-4">
+              <li>On campus</li>
+              <li>Online</li>
+              <li>For companies</li>
+              <li>Sign in</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile hero -->
+    <div
+      class="flex flex-col md:flex-row h-full w-full px-4 py-8 bg-yellow-300"
+    >
+      <div class="w-full md:w-3/5 md:px-4 md:py-8 bg-red-400">
+        <img
+          class="md:h-full md:w-full"
+          src="../../images/banner.jpg"
+        />
+      </div>
+      <div
+        class="flex flex-col justify-center text-start md:w-2/5 px-4 py-8 bg-gray-400"
+      >
+        <div class="flex flex-col content-center">
+          <h1
+            class="py-8 px-4 font-bold md:text-7xl md:overflow-hidden text-4xl w-full"
+          >
+            Learn something new everyday
+          </h1>
+          <p class="pb-6 px-4 md:text-3xl text-2xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button class="bg-gray-500 text-white py-2">Start here</button>
+        </div>
+      </div>
+    </div>    
+
+
+    <!--Mobile info.-->
+    <section class="flex flex-col md:hidden">
+      
+      <div class="flex flex-col  h-full w-full px-4 py-8 ">
+      <div class="w-full md:w-3/5 bg-red-400 ">
+        <img
+          class="h-full w-full md:px-4 md:py-8"
+          src="../../images/information-orientation-mobile.jpg"
+        />
+      </div>
+      <div
+        class="flex flex-col justify-center text-start md:w-2/5 px-4 py-8"
+      >
+        <div class="flex flex-col content-center">
+          <h1
+            class="py-8 px-4 font-bold md:text-7xl md:overflow-hidden text-4xl w-full"
+          >
+            Orientation date
+          </h1>
+          <p class="pb-6 px-4 md:text-3xl text-2xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class=" text-blue-400 py-2 px-4">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col  h-full w-full px-4 py-8 "
+    >
+      <div class="w-full md:w-3/5 bg-red-400">
+        <img
+          class="h-full w-full md:px-4 md:py-8"
+          src="../../images/information-campus-mobile.jpg"
+        />
+      </div>
+      <div
+        class="flex flex-col justify-center text-start md:w-2/5 px-4 py-8"
+      >
+        <div class="flex flex-col content-center">
+          <h1
+            class="py-8 px-4 font-bold md:text-7xl md:overflow-hidden text-4xl w-full"
+          >
+            Our campus
+          </h1>
+          <p class="pb-6 px-4 md:text-3xl text-2xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class=" text-blue-400 py-2 px-4">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col w-auto h-auto px-4 py-8"
+    >
+      <div class="w-full md:w-3/5 bg-red-400">
+        <img
+          class="h-full w-full md:px-4 md:py-8"
+          src="../../images/information-guest-lecture-mobile.jpg"
+        />
+      </div>
+      <div
+        class="flex flex-col justify-center text-start md:w-2/5 px-4 py-8"
+      >
+        <div class="flex flex-col content-center">
+          <h1
+            class="py-8 px-4 font-bold md:text-7xl md:overflow-hidden text-4xl w-full"
+          >
+            Special guest lecture
+          </h1>
+          <p class="pb-6 px-4 md:text-3xl text-2xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a class=" text-blue-400 py-2 px-4">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Desktop info.-->
+  <section
+      class="md:flex flex-row h-full w-full px-4 py-8 bg-yellow-300 hidden"
+    >
+      <div
+        class="w-full md:w-3/5 md:px-4 md:py-8 bg-red-400 md:flex flex-col"
+      >
+        <img
+          class="flex flex-row md:h-auto md:w-auto md:overflow-hidden"
+          src="../../images/information-main.jpg"
+        />
+        <h1
+          class="flex flex-col justify-center text-start px-4 py-8 text-7xl font-bold"
+        >
+          It's doesn't hurt to keep practicing
+        </h1>
+        <p class="flex flex-col text-start text-3xl px-4 py-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+          delectus autem. Enim quam modi excepturi culpa, dicta, eveniet impedit
+          recusandae id fuga molestiae eaque consequuntur quod incidunt
+          voluptatem aliquam et.
+        </p>        
+      </div>
+
+      <div
+        class="flex flex-col md:w-2/5 px-4 py-8"
+      >    
+      <div class="flex flex-row h-full w-full px-4 py-4">    
+          <img class="h-auto w-[35%]" src="../../images/information-orientation.jpg" />
+        <div class="flex flex-col justify-center w-[65%] h-auto">
+          <h2 class="font-bold px-4 text-3xl">Orientation date</h2>          
+          <p class="pb-6 px-4 text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <a class="text-blue-500 px-4 py-2">Read more</a>
+        </div>
+      </div>
+        
+      <div class="flex flex-row h-full w-full px-4 py-4 ">  
+          <img class="h-auto w-[35%]" src="../../images/information-campus.jpg" />
+      <div class="flex flex-col justify-center w-[65%] h-auto">
+          <h2 class="font-bold px-4 text-3xl">Orientation date</h2>          
+          <p class="pb-6 px-4 text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <a class="text-blue-500 px-4 py-2">Read more</a>
+        </div>
+      </div>
+        
+        <div class="flex flex-row h-full w-full px-4 py-4 bg-slate-200 ">  
+          <img class="h-auto w-[35%]" src="../../images/information-guest-lecture.jpg" />
+        <div class="flex flex-col justify-center w-[65%] h-auto">
+          <h2 class="font-bold px-4 text-3xl">Orientation date</h2>          
+          <p class="pb-6 px-4 text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <a class="text-blue-500 px-4 py-2">Read more</a>
+        </div>
+      </div>
+    </div>   
+  </section>
+
+   
+<hr>
+
+    <!--Mobile course-->
+    <section class="pt-8 md:hidden">
+      <h1 class="w-full h-full text-center font-bold text-3xl pb-4">
+        Start Learning
+      </h1>
+      <div class="px-4">
+      <div class="bg-gray-300  pl-4 pt-4 pb-6 mb-2 font-bold">Software engineer</div>
+      <div class="bg-gray-300  pl-4 pt-4 pb-6 mb-2 font-bold">Computer art</div>
+      <div class="bg-gray-300  pl-4 pt-4 pb-6 mb-2 font-bold">Design</div>
+      <div class="bg-gray-300  pl-4 pt-4 pb-6 mb-2 font-bold">Data</div>
+      <div class="bg-gray-300  pl-4 pt-4 pb-6 mb-2 font-bold">Business</div>
+      <div class="bg-gray-300  pl-4 pt-4 pb-6 mb-2 font-bold">Marketing</div>
+      </div>
+    </section>
+
+    <!--Desktop course-->
+
+    <section class="md:block hidden">
+      <div class="bg-gray-300 w-full px-[72px] py-[32px]">
+        <h2 class="font-bold text-5xl px-8 py-8 text-center">Start learning</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white shadow-lg">
+            <img class="w-full" src="../../images/course-software.jpg" />
+            <div class="px-4 py-6">
+              <h2 class="text-2xl font-bold py-4">Software engineer</h2>
+              <p class="py-2">COURSE</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, deserunt.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg">
+            <img class="w-full" src="../../images/course-computer-art.jpg" />
+            <div class="px-4 py-6">
+              <h2 class="text-2xl font-bold py-4">Computer art</h2>
+              <p class="py-2">COURSE</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, deserunt.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg">
+            <img class="w-full" src="../../images/course-design.jpg" />
+            <div class="px-4 py-6">
+              <h2 class="text-2xl font-bold py-4">Design</h2>
+              <p class="py-2">COURSE</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, deserunt.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg">
+            <img class="w-full" src="../../images/course-data.jpg" />
+            <div class="px-4 py-6">
+              <h2 class="text-2xl font-bold py-4">Data</h2>
+              <p class="py-2">COURSE</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, deserunt.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg">
+            <img class="w-full" src="../../images/course-business.jpg" />
+            <div class="px-4 py-6">
+              <h2 class="text-2xl font-bold py-4">Business</h2>
+              <p class="py-2">COURSE</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, deserunt.
+              </p>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg">
+            <img class="w-full" src="../../images/course-marketing.jpg" />
+            <div class="px-4 py-6">
+              <h2 class="text-2xl font-bold py-4">Marketing</h2>
+              <p class="py-2">COURSE</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Officia, deserunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Thesis mobile-->
+    <h2 class="w-full h-full text-center pt-8 pb-4 font-bold text-3xl">
+      Thesis Exhibits
+    </h2>
+
+    <section class="md:hidden">
+      
+      <div class="pb-4">
+      <div
+        class="w-full md:w-3/5 md:px-4 md:py-8 bg-red-400 md:flex flex-col"
+      >
+        <iframe
+          class="w-full aspect-video pt-4 pb-6"
+          src="../../videos/thesis.mp4">
+        </iframe>
+      </div>
+    </section>
+
+    <!--Thesis desktop-->
+    
+    <section
+      class="justify-center text-start hidden md:flex flex-row"
+    > 
+      
+    
+      <div
+        class="w-full md:w-3/5 md:px-4 md:py-8 md:flex flex-col"
+      >
+        <iframe
+          class="w-full aspect-video px-6 py-6"
+          src="../../videos/thesis.mp4">
+        </iframe>
+        
+        <h2
+          class="flex flex-col justify-center text-start px-4 py-8 text-2xl font-bold"
+        >
+          Reimagine urban
+        </h2>
+        <p class="flex flex-col text-start px-4 py-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+          delectus autem. Enim quam modi excepturi culpa, dicta, eveniet impedit
+          recusandae id fuga molestiae eaque consequuntur quod incidunt
+          voluptatem aliquam et.
+        </p>
+            
+      </div>
+
+      <div
+        class="flex flex-col md:w-2/5 px-4 py-8"
+      >    
+      <div class="flex flex-row h-1/3 w-full px-4 py-4 bg-slate-400">    
+          <img class="h-auto w-[35%]" src="../../images/thesis-fisma.jpg" />
+        <div class="flex flex-col justify-center w-full">
+          <h2 class="font-bold px-4 text-3xl">Fisma design and prototype</h2>          
+          <p class="pb-6 px-4 text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          
+        </div>
+      </div>
+        
+      <div class="flex flex-row h-1/3 w-full px-4 py-4">  
+          <img class="h-auto w-[35%]" src="../../images/thesis-now-and-then.jpg" />
+      <div class="flex flex-col justify-center w-full">
+          <h2 class="font-bold px-4 text-3xl">Now and then</h2>          
+          <p class="pb-6 px-4 text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>     
+          
+        </div>
+      </div>
+    </section>
+  <hr/>
+    <!--footer mobile-->
+    <footer class="flex w-full py-4 px-4 md:hidden">
+      <p>© 2016 Colmar academy. All rights reserved</p>
+    </footer>
+    <!--footer desktop-->
+    <footer class="hidden p-4 md:flex flex-row justify-between">      
+      <p>© 2016 Colmar academy. All rights reserved</p>
+      <ul class="flex gap-4">
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+    </footer>
+
   </body>
 </html>
