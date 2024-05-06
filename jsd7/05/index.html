@@ -1,14 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Developer's Pathway</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
-  </body>
+</head>
+
+<body>
+    <header>
+        <nav class="h-16 px-6 w-full flex items-center justify-center md:justify-between">
+            <div class="flex h-8 w-full justify-between items-center md:w-auto md:px-0">
+                <a href="#" class="hover:bg-slate-400 hover:rounded-lg w-full flex justify-center items-center">
+                    <img src="../../images/ic-logo.svg" alt="ColmarAcademy-logo" class="h-8 w-8" />
+                    <p class="hidden md:inline-block">
+                        <b>COLMAR</b>ACADEMY
+                    </p>
+                </a>
+                <a href="#" class="hover:bg-slate-400 hover:rounded-lg w-full flex justify-center md:hidden"><img
+                        src="../../images/ic-on-campus.svg" alt="oncampus logo" class="h-8 w-8" /></a>
+                <a href="#" class="hover:bg-slate-400 hover:rounded-lg w-full flex justify-center md:hidden"><img
+                        src="../../images/ic-online.svg" alt="online logo" class="h-8 w-8" /></a>
+                <a href="#" class="hover:bg-slate-400 hover:rounded-lg w-full flex justify-center md:hidden"><img
+                        src="../../images/ic-login.svg" alt="login" class="h-8 w-8" /></a>
+            </div>
+            <div class="">
+                <ul class="hidden md:flex gap-4">
+                    <li><a href="#" class="">On Campus</a></li>
+                    <li><a href="#" class="">Online</a></li>
+                    <li><a href="#" class="">For companies</a></li>
+                    <li><a href="#" class="">Sign in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="hero" class="bg-[#DBDBDB] md:flex md:py-8 pb-8 md:pl-6">
+        <div class="md:w-3/5">
+            <img src="../../images/banner.jpg" />
+        </div>
+        <div class="px-4 md:content-center md:pl-6">
+            <h1 class="py-8 font-bold text-4xl">
+                Learn something new everyday
+            </h1>
+            <p class="pb-6 text-xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="text-xl font-bold bg-[#9B9B9B] md:bg-[#4A4A4A] text-white py-2 w-full">
+                Start here
+            </button>
+        </div>
+    </section>
+    <section id="information" class="md:flex bg-[#F3F5F5]">
+        <div class="hidden md:flex flex-col w-3/5 px-6 py-8">
+            <img src="../../images/information-main.jpg" alt="guy-reading-a-book" />
+            <h2 class="font-bold text-2xl md:pt-8 pb-6">It doesn't hurt to keep practicing</h2>
+            <p>
+                " Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
+                Sed
+                non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
+                tristique
+                ligula."
+            </p>
+            <p class="pt-8">Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+        <div class="flex flex-col justify-center p-4 pb-8 md:w-2/5 pt-8 md:justify-start">
+            <div class="flex flex-col pb-16 md:flex-row md:p-4 md:pt-0">
+                <img class="hidden md:flex w-1/3" src="../../images/information-orientation.jpg" alt="" />
+                <img class="pb-8 md:hidden" src="../../images/information-orientation-mobile.jpg" alt="" />
+                <div class="flex flex-col gap-2 px-4">
+                    <h3 class="font-bold text-lg">Orientation date</h3>
+                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                    <a href="#" class="text-blue-400 font-bold">Read more</a>
+                </div>
+            </div>
+            <div class="flex flex-col pb-16 md:flex-row md:p-4">
+                <img class="hidden md:flex w-1/3" src="../../images/information-campus.jpg" alt="" />
+                <img class="pb-8 md:hidden" src="../../images/information-campus-mobile.jpg" alt="" />
+                <div class="flex flex-col gap-2 px-4">
+                    <h3 class="font-bold text-lg">Our Campus</h3>
+                    <p>Find which campus is close by you</p>
+                    <a href="#" class="text-blue-400 font-bold">Read more</a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row md:p-4 md:bg-[#D8D8D8]">
+                <img class="hidden md:flex w-1/3" src="../../images/information-guest-lecture.jpg" alt="" />
+                <img class="pb-8 md:hidden" src="../../images/information-guest-lecture-mobile.jpg" alt="" />
+                <div class="flex flex-col gap-2 px-4">
+                    <h3 class="font-bold text-lg">Our guest lecture</h3>
+                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                    <a href="#" class="text-blue-400 font-bold">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="course" class="flex flex-col px-4 py-8 justify-center items-center md:px-9 bg-[#EAEBEC]">
+        <div class="pb-4 w-full text-center md:pb-8">
+            <h2 class="font-bold text-2xl">Start learning</h2>
+        </div>
+        <div class="w-full flex flex-col gap-y-2 md:flex-row md:flex-wrap md:px-9 md:gap-8">
+            <div class="flex flex-col w-full md:w-[calc((100%-64px)/3)] md:h-auto">
+                <img class="hidden md:flex w-full" src="../../images/course-software.jpg" alt="software engineering" />
+                <div class="bg-[#d8d8d8] md:bg-white flex flex-col gap-2 p-4 pb-6 h-full">
+                    <h3 class="text-xl font-bold md:p-0">Software engineering</h3>
+                    <p class="hidden md:flex">COURSES</p>
+                    <p class="hidden md:flex">Web Development, Mobile Development, iOT, APIs</p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full md:w-[calc((100%-64px)/3)] md:h-auto">
+                <img class="hidden md:flex w-full" src="../../images/course-computer-art.jpg" alt="computer art" />
+                <div class="bg-[#d8d8d8] md:bg-white md:flex md:flex-col md:gap-2 md:p-4 md:pb-6 md:h-full)">
+                    <h3 class="p-4 pb-6 text-xl font-bold md:p-0">Computer art</h3>
+                    <p class="hidden md:flex">COURSES</p>
+                    <p class="hidden md:flex">
+                        Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                        Computer Animation
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full md:w-[calc((100%-64px)/3)] md:h-auto">
+                <img class="hidden md:flex w-full" src="../../images/course-design.jpg" alt="design" />
+                <div class="bg-[#d8d8d8] md:bg-white flex flex-col gap-2 p-4 pb-6 h-full">
+                    <h3 class="text-xl font-bold md:p-0">Design</h3>
+                    <p class="hidden md:flex">COURSES</p>
+                    <p class="hidden md:flex">
+                        User Experience Design, User Research, Visual Design
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full md:w-[calc((100%-64px)/3)] md:h-auto">
+                <img class="hidden md:flex w-full" src="../../images/course-data.jpg" alt="data" />
+                <div class="bg-[#d8d8d8] md:bg-white flex flex-col gap-2 p-4 pb-6 h-full">
+                    <h3 class="text-xl font-bold md:p-0">Data</h3>
+                    <p class="hidden md:flex">COURSE</p>
+                    <p class="hidden md:flex">Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full md:w-[calc((100%-64px)/3)] md:h-auto">
+                <img class="hidden md:flex w-full" src="../../images/course-business.jpg" alt="bussiness" />
+                <div class="bg-[#d8d8d8] md:bg-white flex flex-col gap-2 p-4 pb-6 h-full">
+                    <h3 class="text-xl font-bold md:p-0">Business</h3>
+                    <p class="hidden md:flex">COURSES</p>
+                    <p class="hidden md:flex">
+                        Product Development, Business Development, Startup
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full md:w-[calc((100%-64px)/3)] md:h-auto">
+                <img class="hidden md:flex w-full" src="../../images/course-marketing.jpg" alt="business" />
+                <div class="bg-[#d8d8d8] md:bg-white flex flex-col gap-2 p-4 pb-6 h-full">
+                    <h3 class="text-xl font-bold md:p-0">Marketing</h3>
+                    <p class="hidden md:flex">COURSE</p>
+                    <p class="hidden md:flex">Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="thesis" class="pt-8 pb-6 bg-[#F3F5F5] md:pb-8">
+        <div class="pb-4 text-center md:pb-6">
+            <h2 class="font-bold text-2xl">Thesis exhibit</h2>
+        </div>
+        <div class="md:flex">
+            <div class="md:w-3/5 md:px-6">
+                <video class="w-full md:pb-6" src="../../videos/thesis.mp4" type="video/mp4" controls></video>
+                <h3 class="hidden text-2xl font-bold pb-4 md:flex">Reimagine urban</h3>
+                <p class="hidden md:flex">
+                    "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+                    commodo lectus, nec consequat neque. Sed non accumsan urna.
+                    Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+                    dolor consequat, tristique ligula."
+                </p>
+            </div>
+            <div class="hidden md:flex md:flex-col md:w-2/5">
+                <div class="flex bg-[#D8D8D8]">
+                    <img class="w-1/3 p-4" src="../../images/thesis-fisma.jpg" alt="thesis fisma" />
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-lg font-bold">Fisma: Design and Prototype</h3>
+                        <p>Designer showcase of new prototype product</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img class="w-1/3 p-4" src="../../images/information-campus.jpg" alt="now and then" />
+                    <div class="flex flex-col justify-center">
+                        <h3 class="text-lg font-bold">Now and Then</h3>
+                        <p>Research study about New York</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4 px-4 bg-[#F3F5F5] md:flex md:justify-between md:px-6 md:border-t-2">
+        <p class="">&copy;2016 Colmar Academy. All rights reserved</p>
+        <ul class="hidden md:flex md:gap-4 ">
+            <li><a href=" #">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </footer>
+</body>
+<a href="../../index.html" class=" bg-blue-500 text-white px-4 py-2 shadow-lg flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+    Back to NJMKL
+</a>
+
 </html>
