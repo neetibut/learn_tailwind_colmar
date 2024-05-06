@@ -7,8 +7,71 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+    <section id="hero" class="bg-gray-300 p-0 md:px-6 md:py-8 md:flex ">
+      <img src="../../images/banner.jpg" class="md:w-3/5">
+      <div class="py-8 px-4 md:p-6 md:content-center">
+        <h1 class="text-3xl font-bold text-gray-700">Learn something new everyday</h1>
+        <p class="text-lg pt-8 pb-6 font-bold text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a class="block py-2 w-full text-base text-white text-center bg-gray-400 md:bg-gray-700" href="">Start here</a>
+      </div>
+    </section>
+
+    <section class="md:flex md:items-stretch">
+      <div class="hidden md:flex md:w-3/5 md:flex-col md:justify-start md:px-6 md:py-8">
+        <figure class="">
+          <img src="../../images/information-main.jpg">
+        </figure>
+        <div class="h-full flex flex-col">
+          <h2 class="pt-8 pb-6 text-2xl font-bold text-gray-700">
+            It doesn't hurt to keep practicing
+          </h2>
+          <p class="text-sm text-gray-600">
+            "Curabitur vitae libero in ipsum porttitor consequat. 
+            Aliquam et commodo lectus, nec consequat neque. 
+            Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
+            magna laoreet, efficitur dolor consequat, tristique ligula."
+          </p>
+          <br>
+          <p class="text-gray-700 text-sm mt-auto">Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+      </div>
+      <div class="p-4 pb-8 md:w-2/5 md:p-0 md:pt-4 md:border-l">
+        <article class="md:flex md:p-4 md:hover:bg-gray-300">
+          <figure class="md:w-[35%]">
+            <img class="max-w-full w-full md:hidden" src="../../images/information-orientation-mobile.jpg">
+            <img class="hidden md:inline" src="../../images/information-orientation.jpg">
+          </figure>
+          <div class="px-4 pt-4 md:p-4 md:content-center">
+            <h3 class="text-lg text-gray-700 font-semibold">Orientation date</h3>
+            <p class="text-sm text-gray-600">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#" class="text-sm text-blue-400">Read more</a>
+          </div>
+        </article>
+        <article class="py-16 md:flex md:p-4 md:hover:bg-gray-300">
+          <figure class="md:w-[35%]">
+            <img class="max-w-full w-full md:hidden" src="../../images/information-campus-mobile.jpg">
+            <img class="hidden md:inline" src="../../images/information-campus.jpg">
+          </figure>
+          <div class="px-4 pt-4 md:p-4 md:content-center">
+            <h3 class="text-lg text-gray-700 font-semibold">Our campus</h3>
+            <p class="text-sm text-gray-600">Find which campus is close by you</p>
+            <a href="#" class="text-sm text-blue-400">Read more</a>
+          </div>
+        </article>
+        <article class="md:flex md:p-4 md:hover:bg-gray-300">
+          <figure class="md:w-[35%]">
+            <img class="max-w-full w-full md:hidden" src="../../images/information-guest-lecture-mobile.jpg">
+            <img class="hidden md:inline" src="../../images/information-guest-lecture.jpg">
+          </figure>
+          <div class="px-4 pt-4 md:p-4 md:content-center md:w-[65%]">
+            <h3 class="text-lg text-gray-700 font-semibold">Our guest lecture</h3>
+            <p class="text-sm text-gray-600">Join a keynote with Oliver Slack about music in medical treatment</p>
+            <a href="#" class="text-sm text-blue-400">Read more</a>
+          </div>
+        </article>
+      </div>
+    </section>
   </body>
 </html>

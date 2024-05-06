@@ -1,14 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer's Pathway</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="shortcut icon"
+			href="../../images/ic-logo.svg"
+			type="image/x-icon"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>31-vicky-colmar</title>
+	</head>
+	<body class="text-neutral-600">
+		<header class="flex justify-between items-center h-16 sm:px-6">
+			<a href="#" class="hidden sm:flex items-center h-8 tracking-wide">
+				<picture>
+					<img src="../../images/ic-logo.svg" alt="Logo icon" />
+				</picture>
+				<p class="text-lg font-bold">COLMAR</p>
+				<p class="text-lg text-neutral-400">ACADEMY</p>
+			</a>
+
+			<nav class="h-full flex items-center">
+				<ul class="hidden sm:flex gap-4 h-full items-center">
+					<li
+						class="flex items-center h-full px-2 hover:bg-neutral-200 transition duration-300 ease-in-out"
+					>
+						<a href="#">On campus</a>
+					</li>
+					<li
+						class="flex items-center h-full px-2 hover:bg-neutral-200 transition duration-300 ease-in-out"
+					>
+						<a href="#">Online</a>
+					</li>
+					<li
+						class="flex items-center h-full px-2 hover:bg-neutral-200 transition duration-300 ease-in-out"
+					>
+						<a href="#">For companies</a>
+					</li>
+					<li
+						class="flex items-center h-full px-2 hover:bg-neutral-200 transition duration-300 ease-in-out"
+					>
+						<a href="#">Sign in</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="sm:hidden flex justify-around w-full">
+				<a href="#">
+					<img class="w-8" src="../../images/ic-logo.svg" alt="Logo icon" />
+				</a>
+				<a href="#">
+					<img
+						class="w-8"
+						src="../../images/ic-on-campus.svg"
+						alt="On campus icon"
+					/>
+				</a>
+				<a href="#">
+					<img class="w-8" src="../../images/ic-online.svg" alt="Online icon" />
+				</a>
+				<a href="#">
+					<img class="w-8" src="../../images/ic-login.svg" alt="Log in icon" />
+				</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="flex flex-col sm:flex-row sm:py-8 sm:px-6 bg-neutral-300">
+				<picture class="sm:w-3/5 sm:pr-6">
+					<img class="w-full" src="../../images/banner.jpg" alt="Banner" />
+				</picture>
+
+				<article
+					class="flex flex-col py-8 px-4 sm:p-0 sm:w-2/5 sm:justify-center"
+				>
+					<h1 class="text-4xl font-bold">Learn something new everyday</h1>
+					<p class="pt-8 pb-6 font-bold">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</p>
+
+					<button
+						class="py-2 bg-neutral-700 text-neutral-50 w-full hover:bg-neutral-400 transition duration-300 ease-in-out"
+					>
+						Start here
+					</button>
+				</article>
+			</section>
+
+			<section class="bg-neutral-100 border-b-2 border-neutral-200 lg:flex">
+				<article
+					class="hidden sm:flex sm:flex-col sm:p-4 lg:w-3/5 lg:py-8 lg:px-6"
+				>
+					<picture class="pb-8">
+						<img
+							class="w-full"
+							src="../../images/information-main.jpg"
+							alt="Information Main"
+						/>
+					</picture>
+					<h2 class="text-3xl font-bold">It doesn't hurt to keep practicing</h2>
+					<p class="py-6">
+						"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+						commodo lectus, nec consequat neque. Sed non accumsan urna.
+						Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+						dolor consequat, tristique ligula."
+					</p>
+					<p>Emanuel, Sr Strategist at Hiring.com</p>
+				</article>
+
+				<div class="lg:w-2/5 lg:border-l-2 border-neutral-200">
+					<article
+						class="pt-4 pb-8 px-4 sm:flex sm:items-center lg:border-[1px] border-neutral-200 lg:p-4 lg:pt-8 hover:bg-neutral-300 transition duration-300 ease-in-out"
+					>
+						<picture class="sm:w-3/5 lg:w-1/3">
+							<img
+								class="hidden w-full lg:flex"
+								src="../../images/information-orientation.jpg"
+								alt="Orientation date"
+							/>
+							<img
+								class="w-full lg:hidden"
+								src="../../images/information-orientation-mobile.jpg"
+								alt="Orientation date"
+							/>
+						</picture>
+						<div
+							class="flex flex-col p-4 gap-2 sm:w-2/5 lg:w-2/3 lg:p-0 lg:px-4"
+						>
+							<h3 class="text-2xl font-bold">Orientation date</h3>
+							<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+							<a class="text-sky-600" href="#">Read more</a>
+						</div>
+					</article>
+
+					<article
+						class="pt-4 pb-8 px-4 sm:flex sm:items-center lg:border-[1px] border-neutral-200 lg:p-4 hover:bg-neutral-300 transition duration-300 ease-in-out"
+					>
+						<picture class="sm:w-3/5 lg:w-1/3">
+							<img
+								class="hidden w-full lg:flex"
+								src="../../images/information-campus.jpg"
+								alt="Campus"
+							/>
+							<img
+								class="w-full lg:hidden"
+								src="../../images/information-campus-mobile.jpg"
+								alt="Campus"
+							/>
+						</picture>
+						<div
+							class="flex flex-col p-4 gap-2 sm:w-2/5 lg:w-2/3 lg:p-0 lg:px-4"
+						>
+							<h3 class="text-2xl font-bold">Our campus</h3>
+							<p>Find which campus is close by you</p>
+							<a class="text-sky-600" href="#">Read more</a>
+						</div>
+					</article>
+
+					<article
+						class="pt-4 pb-8 px-4 sm:flex sm:items-center lg:border-[1px] lg:p-4 border-neutral-200 hover:bg-neutral-300 transition duration-300 ease-in-out"
+					>
+						<picture class="sm:w-3/5 lg:w-1/3">
+							<img
+								class="hidden w-full lg:flex"
+								src="../../images/information-guest-lecture.jpg"
+								alt="Guest Lecture"
+							/>
+							<img
+								class="w-full lg:hidden"
+								src="../../images/information-guest-lecture-mobile.jpg"
+								alt="Guest Lecture"
+							/>
+						</picture>
+						<div
+							class="flex flex-col p-4 gap-2 sm:w-2/5 lg:w-2/3 lg:p-0 lg:px-4"
+						>
+							<h3 class="text-2xl font-bold">Our guest lecture</h3>
+							<p>
+								Join a keynote with Oliver Sack about music in medical treatment
+							</p>
+							<a class="text-sky-600" href="#">Read more</a>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section
+				class="bg-neutral-100 border-b-2 border-neutral-200 py-8 px-4 lg:py-8 lg:px-[72px] lg:bg-neutral-200"
+			>
+				<h2 class="text-3xl font-bold text-center pb-8">Start Learning</h2>
+
+				<div class="flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:gap-8">
+					<article
+						class="pt-4 pb-6 px-4 bg-neutral-300 lg:w-[calc((100%-64px)/3)] lg:bg-neutral-50 lg:p-0 hover:shadow-[0_0_10px_1px_rgb(170,170,170)] transition duration-300 ease-in-out"
+					>
+						<picture class="hidden lg:flex">
+							<img
+								class="w-full"
+								src="../../images/course-software.jpg"
+								alt="Software engineering course"
+							/>
+						</picture>
+						<div class="lg:flex lg:flex-col lg:gap-2 lg:p-4">
+							<h3 class="text-2xl font-bold">Software engineering</h3>
+							<p class="hidden lg:flex">COURSES</p>
+							<p class="hidden lg:flex">
+								Web Development, Mobile Development, iOT, APIs
+							</p>
+						</div>
+					</article>
+
+					<article
+						class="pt-4 pb-6 px-4 bg-neutral-300 lg:w-[calc((100%-64px)/3)] lg:bg-neutral-50 lg:p-0 hover:shadow-[0_0_10px_1px_rgb(170,170,170)] transition duration-300 ease-in-out"
+					>
+						<picture class="hidden lg:flex">
+							<img
+								class="w-full"
+								src="../../images/course-computer-art.jpg"
+								alt="Computer art course"
+							/>
+						</picture>
+						<div class="lg:flex lg:flex-col lg:gap-2 lg:p-4">
+							<h3 class="text-2xl font-bold">Computer art</h3>
+							<p class="hidden lg:flex">COURSES</p>
+							<p class="hidden lg:flex">
+								Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+								Computer Animation
+							</p>
+						</div>
+					</article>
+
+					<article
+						class="pt-4 pb-6 px-4 bg-neutral-300 lg:w-[calc((100%-64px)/3)] lg:bg-neutral-50 lg:p-0 hover:shadow-[0_0_10px_1px_rgb(170,170,170)] transition duration-300 ease-in-out"
+					>
+						<picture class="hidden lg:flex">
+							<img
+								class="w-full"
+								src="../../images/course-design.jpg"
+								alt="Design course"
+							/>
+						</picture>
+						<div class="lg:flex lg:flex-col lg:gap-2 lg:p-4">
+							<h3 class="text-2xl font-bold">Design</h3>
+							<p class="hidden lg:flex">COURSES</p>
+							<p class="hidden lg:flex">
+								User Experience Design, User Research, Visual Design
+							</p>
+						</div>
+					</article>
+
+					<article
+						class="pt-4 pb-6 px-4 bg-neutral-300 lg:w-[calc((100%-64px)/3)] lg:bg-neutral-50 lg:p-0 hover:shadow-[0_0_10px_1px_rgb(170,170,170)] transition duration-300 ease-in-out"
+					>
+						<picture class="hidden lg:flex">
+							<img
+								class="w-full"
+								src="../../images/course-data.jpg"
+								alt="Data course"
+							/>
+						</picture>
+						<div class="lg:flex lg:flex-col lg:gap-2 lg:p-4">
+							<h3 class="text-2xl font-bold">Data</h3>
+							<p class="hidden lg:flex">COURSES</p>
+							<p class="hidden lg:flex">
+								Data Science, Big Data, SQL, Data Visualization
+							</p>
+						</div>
+					</article>
+
+					<article
+						class="pt-4 pb-6 px-4 bg-neutral-300 lg:w-[calc((100%-64px)/3)] lg:bg-neutral-50 lg:p-0 hover:shadow-[0_0_10px_1px_rgb(170,170,170)] transition duration-300 ease-in-out"
+					>
+						<picture class="hidden lg:flex">
+							<img
+								class="w-full"
+								src="../../images/course-business.jpg"
+								alt="Business course"
+							/>
+						</picture>
+						<div class="lg:flex lg:flex-col lg:gap-2 lg:p-4">
+							<h3 class="text-2xl font-bold">Business</h3>
+							<p class="hidden lg:flex">COURSES</p>
+							<p class="hidden lg:flex">
+								Product Development, Business Development, Startup
+							</p>
+						</div>
+					</article>
+
+					<article
+						class="pt-4 pb-6 px-4 bg-neutral-300 lg:w-[calc((100%-64px)/3)] lg:bg-neutral-50 lg:p-0 hover:shadow-[0_0_10px_1px_rgb(170,170,170)] transition duration-300 ease-in-out"
+					>
+						<picture class="hidden lg:flex">
+							<img
+								class="w-full"
+								src="../../images/course-marketing.jpg"
+								alt="Marketing course"
+							/>
+						</picture>
+						<div class="lg:flex lg:flex-col lg:gap-2 lg:p-4">
+							<h3 class="text-2xl font-bold">Marketing</h3>
+							<p class="hidden lg:flex">COURSES</p>
+							<p class="hidden lg:flex">
+								Analytics, Content Marketing, Mobile Marketing
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="bg-neutral-100 border-b-2 border-neutral-200 py-8">
+				<h2 class="pt-8 pb-4 text-3xl font-bold text-center lg:p-0 lg:pb-8">
+					Thesis exhibit
+				</h2>
+
+				<div class="lg:flex lg:flex-row">
+					<article class="flex flex-col sm:pb-8 lg:w-3/5 lg:p-0 lg:px-6">
+						<video class="pb-6" src="../../videos/thesis.mp4" controls>
+							Reimagine urban
+						</video>
+						<h3 class="hidden sm:flex text-2xl font-bold sm:px-6 lg:p-0">
+							Reimagine urban
+						</h3>
+						<p class="hidden sm:flex sm:px-6 sm:pt-2 lg:px-0">
+							"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+							commodo lectus, nec consequat neque. Sed non accumsan urna.
+							Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+							dolor consequat, tristique ligula"
+						</p>
+					</article>
+
+					<div class="hidden sm:flex flex-col lg:w-2/5">
+						<article
+							class="flex items-center p-4 hover:bg-neutral-300 transition duration-300 ease-in-out"
+						>
+							<picture class="w-1/3">
+								<img
+									class="w-full"
+									src="../../images/thesis-fisma.jpg"
+									alt="Fisma"
+								/>
+							</picture>
+							<div class="w-2/3 p-4">
+								<h3 class="text-2xl font-bold">Fisma: Design and Prototype</h3>
+								<p>Designer showcase of new prototype product</p>
+							</div>
+						</article>
+
+						<article
+							class="flex items-center p-4 hover:bg-neutral-300 transition duration-300 ease-in-out"
+						>
+							<picture class="w-1/3">
+								<img
+									class="w-full"
+									src="../../images/thesis-now-and-then.jpg"
+									alt="Now and then"
+								/>
+							</picture>
+							<div class="w-2/3 p-4">
+								<h3 class="text-2xl font-bold">Now and then</h3>
+								<p>Research study about New York</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer
+			class="flex justify-between items-center p-4 sm:py-4 sm:px-6 bg-neutral-100"
+		>
+			<p>&copy; 2016 Colmar Academy. All rights reserved</p>
+			<div class="hidden sm:flex gap-4">
+				<a
+					class="hover:text-neutral-950 hover:underline transition duration-300 ease-in-out"
+					href="#"
+					>Terms</a
+				>
+				<a
+					class="hover:text-neutral-950 hover:underline transition duration-300 ease-in-out"
+					href="#"
+					>Privacy</a
+				>
+			</div>
+		</footer>
+	</body>
 </html>
