@@ -1,14 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer's Pathway</title>
-    <!-- Tailwind CSS -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-Namfah-Colmar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
-  </body>
+</head>
+<body>
+    <div>
+        <!-- desktop -->
+        <nav class="max-md:hidden">
+            <div class="flex justify-between ">
+                <div class="flex">
+                    <img src="../../images/ic-logo.svg" alt="Colmar academy logo" />
+                    <p>Colmar</p>
+                    <span class="text-gray-300">Academy</span>
+                </div>
+                <div class="list-none flex justify-center "
+                    <ul class="flex items-center">
+                        <a href="#"><li class="ml-4">On Campus</li></a>
+                        <a href="#"><li class="ml-4">Online</li></a>
+                        <a href="#"><li class="ml-4">For companies</li></a>
+                        <a href="#"><li class="ml-4">Sign in</li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- mobile -->
+    <div class="md:hidden">
+        <header class="md:flex md:py-8 md:bg-gray md:pl-6">
+            <ul class="md:flex justify-start">
+                <div class="flex justify-between">
+                    <a href="#"><img src="../../images/ic-logo.svg" alt="Colmar academy logo" /></a>
+                    <a href="#"><img src="../../images/ic-on-campus.svg" alt="On Campus icon" /></a>
+                    <a href="#"><img src="../../images/ic-online.svg" alt="Online icon" /></a>
+                    <a href="#"><img src="../../images/ic-login.svg" alt="Login icon" /></a>
+                </div>
+            </ul>
+        </header>
+    </div>
+
+    <!-- mobile -->
+    <div class="md:flex md:py-8 md:bg-[rgb(219,219,219)] me:pl-6">
+        <div class="bg-[rgb(219,219,219)] md:w-3/5">
+            <img src ="../../images/banner.jpg" />
+        </div>
+        <div class="pb-[32px] bg-[rgb(219,219,219)] px-4 md:content-normal md:pl-6 lg:content-center">
+            <h1 class="py-6 font-bold text-[32px] text-[rgb(75,75,75)]">Learn something new every day</h1>
+            <p class="text-[rgb(74,74,74)] font-[16px] pb-6 font-[600]">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button class="bg-[rgb(155,155,155)] text-white py-2 w-full">Start here</button>
+        </div>
+    </div>
+    <section class="bg-white md:hidden"> <!--Orientation date-->
+        <div class="p-4 w-full">
+            <img src="../../images/information-orientation-mobile.jpg" />
+        </div>
+        <h1 class="text-xl font-[400] px-4"> Orientation date </h1>
+        <p class="text-sm pl-4 py-1"> Tue 10/11 & Wed 10/12: 8am-3pm</p>
+        <div class="text-blue-500 pl-4 pb-4">
+            <a href="#">Read me</a>
+        </div>
+    </section>
+    <section class="bg-white md:hidden"> <!--Campus-info-->
+        <div class="p-4 w-full">
+            <img src="../../images/information-campus-mobile.jpg" />
+        </div>
+        <h1 class="text-xl font-[400] px-4"> Our campus </h1>
+        <p class="text-sm pl-4 py-1"> Find Which campus is close by you </p>
+        <div class="text-blue-500 pl-4 pb-4">
+            <a href="#">Read me</a>
+        </div>
+    </section>
+    <section class="bg-white md:hidden"> <!--guest-info-->
+        <div class="p-4 w-full">
+            <img src="../../images/information-guest-lecture-mobile.jpg" />
+        </div>
+        <h1 class="text-xl font-[400] px-4"> Our guest lecture </h1>
+        <p class="text-sm pl-4 py-1"> Join a keynote with Oliver Sack about music in medical treatment </p>
+        <div class="text-blue-500 pl-4 pb-4">
+            <a href="#">Read me</a>
+        </div>
+    </section>
+    <!--Learning section-->
+    <section class="flex-col space-y-2 m-3 md:hidden">
+        <div>
+            <h1 class="text-center text-[32px] font-bold text-[rgb(74,74,74)] p-2">Start learning</h1>
+        </div>
+        <div class="bg-[rgb(216,216,216)]">
+            <h1 class="text-[20px] text-[rgb(74,74,74)] font-[600] p-4 pt-1">Software engineer</h1>
+        </div>
+        <div class="bg-[rgb(216,216,216)]">
+            <h1 class="text-[20px] text-[rgb(74,74,74)] font-[600] p-4 pt-1">Computer art</h1>
+        </div>
+        <div class="bg-[rgb(216,216,216)]">
+            <h1 class="text-[20px] text-[rgb(74,74,74)] font-[600] p-4 pt-1">Design</h1>
+        </div>
+        <div class="bg-[rgb(216,216,216)]">
+            <h1 class="text-[20px] text-[rgb(74,74,74)] font-[600] p-4 pt-1">Data</h1>
+        </div>
+        <div class="bg-[rgb(216,216,216)]">
+            <h1 class="text-[20px] text-[rgb(74,74,74)] font-[600] p-4 pt-1">Business</h1>
+        </div>
+        <div class="bg-[rgb(216,216,216)]">
+            <h1 class="text-[20px] text-[rgb(74,74,74)] font-[600] p-4 pt-1">Marketing</h1>
+        </div>
+    </section>
+    <!--Thesis-->
+    <section class="flex-col md:hidden">
+        <div>
+            <h1 class="text-center text-[32px] font-bold text-[rgb(74,74,74)] p-4">Thesis exhibits</h1>
+        </div>
+        <div class="w-fit pb-6">
+            <video controls src="../../videos/thesis.mp4"></video>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="m-4 md:hidden" >
+        <p class="text-sm text-center pd-2"> &#169; 2016 Colmar Academy. All rights reserve</p>
+    </section>
+
+
+
+    <!--Destop version-->
+    <diV class="hidden md:block">
+      <section class="flex bg-[rgb(243,245,245)]">
+        <article class=" px-6 w-3/5 ">
+            <div class="py-8 ">
+              <img src="../../images/information-main.jpg" alt="information-main" />
+            </div>
+            <div class="information-2-left">
+                <h2 class="text-[28px] font-bold text-[rgb(75,75,75)] pb-4">It doesn't hurt to keep practicing</h2>
+                <p class="font-extralight pb-8">
+                "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+                commodo lectus, nec consequat neque. Sed non accumsan urna.
+                Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+                dolor consequat, tristique ligula."
+                </p>
+            <p class="font-sans font-[300] text-[13px] pb-8">Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+        </article>
+        <section class="flex-col bg-[rgb(243,245,245)]">
+          <section class="flex border"> <!--Orientation date-->
+            <div class="p-4 w-2/5">
+                <img src="../../images/information-orientation.jpg" />
+            </div>
+            <div class="py-14">
+              <h1 class="text-xl font-[400] px-4 text-[rgb(75,75,75)]"> Orientation date </h1>
+              <p class="text-sm font-thin pl-4 py-2"> Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <div class="text-blue-500 pl-4 text-sm">
+                <a href="#">Read me</a>
+            </div>
+            </div>
+        </section>
+        <section class="flex border"> <!--Orientation date-->
+          <div class="p-4 w-2/5">
+            <img src="../../images/information-campus.jpg" />
+          </div>
+          <div class="py-14">
+            <h1 class="text-xl font-[400] px-4 text-[rgb(75,75,75)]"> Our campus  </h1>
+            <p class="text-sm font-thin pl-4 py-2"> Find Which campus is close by you</p>
+            <div class="text-blue-500 pl-4 text-sm">
+              <a href="#">Read me</a>
+          </div>
+          </div>
+        </section>
+        <section class="flex border"> <!--Orientation date-->
+          <div class="p-4 w-2/5">
+            <img src="../../images/information-guest-lecture.jpg" />
+          </div>
+          <div class="py-14">
+            <h1 class="text-xl font-[400] px-4 text-[rgb(75,75,75)]"> Our guest lecture </h1>
+            <p class="text-sm font-thin pl-4 pt-2"> Join a keynote with Oliver Sack </p>
+            <p class="text-sm font-thin pl-4 pb-2"> about music in medical treatment </p>
+            <div class="text-blue-500 pl-4 text-sm">
+              <a href="#">Read me</a>
+          </div>
+          </div>
+      </section>
+  </section>
+  </section>
+  <!--course section -->
+  <section class="bg-[rgb(234,235,236)] pb-8">
+  <div class="lg:content-center">
+    <h1 class="py-6 font-bold text-[32px] text-[rgb(75,75,75)] text-center">Start learning</h1>
+  </div>
+  <div class="flex mx-16 px-8">
+    <div class="bg-white m-2 pb-8">
+        <div class="c1-img">
+            <img
+                src="../../images/course-software.jpg"
+            />
+        </div>
+        <div class="m-4">
+            <h4 class="font-semibold text-[20px] text-[rgb(75,75,75)]">Software engineering</h4>
+            <p class="font-thin my-2">COURSES</p>
+            <p class="font-thin">Web Development, Mobile Development, iOT, APIs</p>
+        </div>
+    </div>
+    <div class="bg-white m-2 pb-8">
+        <div class="c-img">
+            <img
+            src="../../images/course-computer-art.jpg"
+            />
+        </div>
+        <div class="m-4">
+            <h4 class="font-semibold text-[20px] text-[rgb(75,75,75)]">Computer art</h4>
+            <p class="font-thin my-2">COURSES</p>
+            <p class="font-thin">Web Development, Mobile Development, iOT, APIs</p>
+        </div>
+    </div>
+    <div class="bg-white m-2 pb-8">
+        <div class="c-img">
+            <img
+            src="../../images/course-design.jpg"
+            />
+        </div>
+        <div class="m-4">
+            <h4 class="font-semibold text-[20px] text-[rgb(75,75,75)]">Design</h4>
+            <p class="font-thin my-2">COURSES</p>
+            <p class="font-thin">User Experience Design, User Research, Visual Design</p>
+        </div>
+    </div>
+    </div>
+    <!------------>
+    <div class="flex mx-16 px-8">
+      <div class="bg-white m-2 pb-8">
+        <div class="w-auto">
+            <img
+            src="../../images/course-data.jpg"
+            />
+        </div>
+        <div class ="m-4">
+            <h4 class="font-semibold text-[20px] text-[rgb(75,75,75)]">Data</h4>
+            <p class="font-thin my-2">COURSES</p>
+            <p class="font-thin">Data Science, Big Data, SQL, Data Visualization</p>
+        </div>
+    </div>
+    <div class="bg-white m-2 pb-8">
+        <div class="c-img">
+            <img
+            src="../../images/course-business.jpg"
+            />
+        </div>
+        <div class ="m-4">
+            <h4 class="font-semibold text-[20px] text-[rgb(75,75,75)]">Business</h4>
+            <p class="font-thin my-2">COURSES</p>
+            <p class="font-thin">Product Development, Business Development, Startup</p>
+        </div>
+    </div>
+    <div class="bg-white m-2 pb-8">
+        <div class="c-img">
+            <img
+            src="../../images/course-marketing.jpg"
+            />
+        </div>
+        <div class ="m-4">
+            <h4 class="font-semibold text-[20px] text-[rgb(75,75,75)]">Marketing</h4>
+            <p class="font-thin my-2">COURSES</p>
+            <p class="font-thin">Analytics, Content Marketing, Mobile Marketing</p>
+        </div>
+    </div>
+    </div>
+  </section>
+  <!--thesis section -->
+  <section class="bg-[rgb(234,235,236)]">
+    <h1 class="py-6 font-bold text-[32px] text-[rgb(75,75,75)] text-center">Thesis exhibit</h1>
+  <div class="flex">
+  <article class="w-3/5">
+    <div class="m-6">
+      <video controls src="../../videos/thesis.mp4"></video>
+    </div>
+    <div class="m-4">
+      <h4 class="mb-4 ml-4 font-[500] text-[20px] text-[rgb(75,75,75)]">Reimagine urban</h4>
+      <p class="font-thin mb-8 m-4">
+        "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et
+        commodo lectus, nec consequat neque. Sed non accumsan urna.
+        Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur
+        dolor consequat, tristique ligula."
+      </p>
+    </div>
+  </article>
+  <article class="w-2/5 m-6">
+    <div class="flex mb-8">
+      <div class="w-[180px]">
+        <img
+          src="../../images/thesis-fisma.jpg"
+        />
+      </div>
+      <div class="p-4">
+        <h4 class="font-[500] pb-2 text-[22px]">Fisma: Design and Prototype</h4>
+        <p class="text-[14-px] font-thin">Designer showcase of new prototype product</p>
+      </div>
+    </div>
+    <div class="flex mb-8">
+      <div class="w-1/3">
+        <img
+          src="../../images/thesis-now-and-then.jpg"
+        />
+      </div>
+      <div class="p-4">
+        <h4 class="font-[500] pb-2 text-[22px]">Now and then</h4>
+        <p class="text-[14-px] font-thin">Research study about New York</p>
+      </div>
+    </div>
+  </article>
+  </div>
+  </section>
+  <footer class="flex justify-between">
+  <p class="justify-between font-extralight text-[14px]">@ 2016 Colmar Academy. All rights reserved</p>
+  <ul class="flex items-center ">
+     <a href=""><li class="font-thin justify-around text-[14px] mx-2">Terms</li></a>
+     <a href=""><li class="font-thin justify-around mx-2 text-[14px]">Privacy</li></a>
+  </ul>
+  </footer>
+</body>
+</body>
 </html>
