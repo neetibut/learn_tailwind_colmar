@@ -8,7 +8,391 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+    <nav>
+      <ul class="flex justify-between p-4 sm:hidden">
+        <img src="../../images/ic-logo.svg" alt="ic-logo" />
+        <img src="../../images/ic-on-campus.svg" alt="ic-on-campus" />
+        <img src="../../images/ic-online.svg" alt="ic-online" />
+        <img src="../../images/ic-login.svg" alt="ic-login" />
+      </ul>
+      <div class="hidden sm:flex justify-between py-4">
+        <div class="flex items-center">
+          <img src="../../images/ic-logo.svg" alt="ic-logo" class="pl-6" />
+          <p class="font-bold">COLMAR</p>
+          <p class="pl-1 text-gray-500">ACADEMY</p>
+        </div>
+        <div class="flex items-center pr-6">
+          <ul class="flex">
+            <li><a href="#" class="pl-4">On campus</a></li>
+            <li><a href="#" class="pl-4">Online</a></li>
+            <li><a href="#" class="pl-4">For companies</a></li>
+            <li><a href="#" class="pl-4">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="flex flex-col">
+      <div class="sm:hidden bg-gray-100">
+        <img src="../../images/banner.jpg" alt="banner" />
+        <div class="flex justify-center flex-col">
+          <h2 class="pl-4 font-bold text-4xl py-8 text-gray-600">
+            Learn something new everyday
+          </h2>
+          <p class="pl-4 mb-6 font-bold text-gray-600 py-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, nisi?
+          </p>
+          <button
+            class="py-4 bg-gray-400 text-2xl font-bold mx-4 text-white hover:opacity-80 mb-8"
+          >
+            Start here
+          </button>
+        </div>
+      </div>
+      <div class="hidden sm:flex pr-6 bg-gray-100">
+        <img
+          src="../../images/banner.jpg"
+          alt="banner"
+          class="w-3/5 px-6 py-8"
+        />
+        <div class="flex flex-col justify-center">
+          <h2 class="font-bold text-4xl py-8 text-gray-600">
+            Learn something new everyday
+          </h2>
+          <p class="mb-6 font-bold text-gray-600 py-2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, nisi?
+          </p>
+          <button
+            class="py-2 bg-gray-400 text-2xl font-bold text-white hover:opacity-80"
+          >
+            Start here
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex justify-center flex-col">
+      <div class="sm:hidden">
+        <div class="flex justify-center flex-col hover:bg-gray-100">
+          <img
+            src="../../images/information-orientation-mobile.jpg"
+            alt="information-orientation"
+            class="p-4"
+          />
+          <div>
+            <h3 class="pl-4 text-2xl font-bold text-gray-600">Orientation</h3>
+            <p class="pl-4 text-gray-500 py-1">
+              Tue 10/11 & Wed 10/12: 8am-3pm
+            </p>
+            <a href="#" class="pl-4 text-blue-500">Read more</a>
+          </div>
+        </div>
+        <div class="flex justify-center flex-col hover:bg-gray-100">
+          <img
+            src="../../images/information-campus-mobile.jpg"
+            alt="information-campus"
+            class="p-4"
+          />
+          <div>
+            <h3 class="pl-4 pt-4 text-2xl font-bold text-gray-600">
+              Our campus
+            </h3>
+            <p class="pl-4 text-gray-500 py-1">
+              Find which campus is close by you
+            </p>
+            <a href="#" class="pl-4 text-blue-500">Read more</a>
+          </div>
+        </div>
+        <div class="flex justify-center flex-col pb-4 hover:bg-gray-100">
+          <img
+            src="../../images/information-guest-lecture-mobile.jpg"
+            alt="information-guest-lecture"
+            class="p-4"
+          />
+          <div>
+            <h3 class="pl-4 pt-4 text-2xl font-bold text-gray-600">
+              Our guest lecturer
+            </h3>
+            <p class="pl-4 text-gray-500 pt-2">
+              Join a keynote with Oliver Sack about music in medical treatment
+            </p>
+            <a href="#" class="pl-4 text-blue-500">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="hidden sm:flex">
+        <div class="pl-6 w-3/5">
+          <img
+            src="../../images/information-main.jpg"
+            alt="information-main"
+            class="py-8 pr-6"
+          />
+          <h2 class="font-bold text-2xl text-gray-600">
+            It doesn't hurt to keep practicing
+          </h2>
+          <p class="text-gray-500 py-6">
+            "Learning new skills can be hard: it takes time and, above all,
+            practice. The reality is, the only way to learn something new is to
+            practice."
+          </p>
+          <p class="text-gray-500 pb-8">
+            Emanuel, Sr. Strategist at Hiring.com
+          </p>
+        </div>
+        <div class="flex flex-col w-2/5">
+          <div class="flex w-2/5 items-center hover:bg-gray-100">
+            <img
+              src="../../images/information-orientation.jpg"
+              alt="information-orientation"
+              class="py-4 pr-4 w-35"
+            />
+            <div class="w-65">
+              <h3
+                class="text-2xl font-bold text-gray-600 text-align-center w-screen"
+              >
+                Orientation
+              </h3>
+              <p class="text-gray-500 py-1">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#" class="text-blue-500">Read more</a>
+            </div>
+          </div>
+          <div class="flex w-2/5 items-center hover:bg-gray-100">
+            <img
+              src="../../images/information-campus.jpg"
+              alt="information-campus"
+              class="py-4 pr-4 w-35"
+            />
+            <div class="w-65">
+              <h3
+                class="text-2xl font-bold text-gray-600 text-align-center w-screen"
+              >
+                Our campus
+              </h3>
+              <p class="text-gray-500 py-1">
+                Find which campus is close by you
+              </p>
+              <a href="#" class="text-blue-500">Read more</a>
+            </div>
+          </div>
+          <div class="flex w-2/5 items-center hover:bg-gray-100">
+            <img
+              src="../../images/information-guest-lecture.jpg"
+              alt="information-guest-lecture"
+              class="py-4 pr-4 w-35"
+            />
+            <div class="w-65">
+              <h3
+                class="text-2xl font-bold text-gray-600 text-align-center w-screen"
+              >
+                Our guest lecturer
+              </h3>
+              <p class="text-gray-500 py-1">
+                Join a keynote with Oliver Sack about music in medical treatment
+              </p>
+              <a href="#" class="text-blue-500">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 pb-8">
+      <div
+        class="flex justify-center pt-8 pb-4 text-4xl font-bold text-gray-600 sm:hidden"
+      >
+        Start Learing
+      </div>
+      <div class="flex justify-center flex-col sm:hidden">
+        <a
+          href="#"
+          class="flex bg-gray-300 font-bold text-gray-600 px-4 pt-4 pb-8 text-2xl mx-4 mb-2 hover:opacity-80"
+          >Software engineer</a
+        >
+        <a
+          href="#"
+          class="flex bg-gray-300 font-bold text-gray-600 px-4 pt-4 pb-8 text-2xl mx-4 mb-2 hover:opacity-80"
+          >Computer art</a
+        >
+        <a
+          href="#"
+          class="flex bg-gray-300 font-bold text-gray-600 px-4 pt-4 pb-8 text-2xl mx-4 mb-2 hover:opacity-80"
+          >Design</a
+        >
+        <a
+          href="#"
+          class="flex bg-gray-300 font-bold text-gray-600 px-4 pt-4 pb-8 text-2xl mx-4 mb-2 hover:opacity-80"
+          >Data</a
+        >
+        <a
+          href="#"
+          class="flex bg-gray-300 font-bold text-gray-600 px-4 pt-4 pb-8 text-2xl mx-4 mb-2 hover:opacity-80"
+          >Business</a
+        >
+        <a
+          href="#"
+          class="flex bg-gray-300 font-bold text-gray-600 px-4 pt-4 pb-8 text-2xl mx-4 mb-2 hover:opacity-80"
+          >Marketing</a
+        >
+      </div>
+
+      <div
+        class="justify-center py-8 text-4xl font-bold text-gray-600 bg-gray-100 hidden sm:flex"
+      >
+        Start Learing
+      </div>
+      <!-- <div class="flex justify-center flex-col"> -->
+      <div class="sm:grid grid-cols-3 pb-8 px-16 gap-8 bg-gray-100 hidden">
+        <div class="hover:shadow-2xl">
+          <img src="../../images/course-software.jpg" alt="course-software" />
+          <a
+            href="#"
+            class="flex font-bold text-gray-600 px-4 pt-4 text-2xl bg-white"
+            >Software engineer</a
+          >
+          <p class="py-2 pl-4 text-gray-500 bg-white">COURSES</p>
+          <p class="pl-4 pb-12 text-gray-500 bg-white">
+            Web Development, Mobile Development, iOT, API
+          </p>
+        </div>
+        <div class="hover:shadow-2xl">
+          <img
+            src="../../images/course-computer-art.jpg"
+            alt="course-computer-art"
+          />
+          <a
+            href="#"
+            class="flex font-bold text-gray-600 px-4 pt-4 text-2xl bg-white"
+            >Computer art</a
+          >
+          <p class="py-2 pl-4 text-gray-500 bg-white">COURSES</p>
+          <p class="pl-4 pb-6 text-gray-500 bg-white">
+            Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+            Computer Animation
+          </p>
+        </div>
+        <div class="hover:shadow-2xl">
+          <img src="../../images/course-design.jpg" alt="course-design" />
+          <a
+            href="#"
+            class="flex font-bold text-gray-600 px-4 pt-4 text-2xl bg-white"
+            >Design</a
+          >
+          <p class="py-2 pl-4 text-gray-500 bg-white">COURSES</p>
+          <p class="pl-4 pb-12 text-gray-500 bg-white">
+            User Experience Design, User Research, Visual Design
+          </p>
+        </div>
+        <div class="hover:shadow-2xl">
+          <img src="../../images/course-data.jpg" alt="course-data" />
+          <a
+            href="#"
+            class="flex font-bold text-gray-600 px-4 pt-4 text-2xl bg-white"
+            >Data</a
+          >
+          <p class="py-2 pl-4 text-gray-500 bg-white">COURSES</p>
+          <p class="pl-4 pb-6 text-gray-500 bg-white">
+            Data Science, Big Data, SQL, Data Visualization
+          </p>
+        </div>
+        <div class="hover:shadow-2xl">
+          <img src="../../images/course-business.jpg" alt="course-business" />
+          <a
+            href="#"
+            class="flex font-bold text-gray-600 px-4 pt-4 text-2xl bg-white"
+            >Business</a
+          >
+          <p class="py-2 pl-4 text-gray-500 bg-white">COURSES</p>
+          <p class="pl-4 pb-6 text-gray-500 bg-white">
+            Product Development, Business Development, Startup
+          </p>
+        </div>
+        <div class="hover:shadow-2xl">
+          <img src="../../images/course-marketing.jpg" alt="course-marketing" />
+          <a
+            href="#"
+            class="flex font-bold text-gray-600 px-4 pt-4 text-2xl bg-white"
+            >Marketing</a
+          >
+          <p class="py-2 pl-4 text-gray-500 bg-white">COURSES</p>
+          <p class="pl-4 pb-6 text-gray-500 bg-white">
+            Analytics, Content Marketing, Mobile Marketing
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center flex-col">
+      <div class="sm:hidden">
+        <div
+          class="flex justify-center pt-8 pb-4 text-4xl font-bold text-gray-600"
+        >
+          Thesis exhibits
+        </div>
+        <video src="../../videos/thesis.mp4" controls class="pb-6"></video>
+      </div>
+
+      <div class="hidden sm:block">
+        <div
+          class="flex justify-center py-8 text-4xl font-bold text-gray-600 sm:flex"
+        >
+          Thesis exhibits
+        </div>
+        <div class="hidden sm:flex">
+          <div class="px-6 w-3/5">
+            <video src="../../videos/thesis.mp4" controls class="pb-6"></video>
+            <h3 class="text-2xl font-bold text-gray-600 pb-2">
+              Reimagine urban
+            </h3>
+            <p class="pb-8 text-gray-600">
+              Public spaces—parks, plazas, and even simple street
+              intersections—are canvases upon which future-minded designers
+              collaborate with technologists to transform urban landscapes.
+            </p>
+          </div>
+          <div class="flex flex-col w-2/5">
+            <div class="flex hover:bg-gray-100">
+              <img
+                src="../../images/thesis-fisma.jpg"
+                alt="thesis-fisma"
+                class="p-4 w-2/6"
+              />
+              <div class="flex flex-col justify-center pr-4">
+                <h3 class="font-bold text-2xl text-gray-600">
+                  Fisma: Design and Prototype
+                </h3>
+                <p class="text-gray-600">
+                  Designer showcase of new prototype product
+                </p>
+              </div>
+            </div>
+            <div class="flex hover:bg-gray-100">
+              <img
+                src="../../images/thesis-now-and-then.jpg"
+                alt="thesis-now-and-then"
+                class="p-4 w-2/6"
+              />
+              <div class="flex flex-col justify-center pr-4">
+                <h3 class="font-bold text-2xl text-gray-600">Now and then</h3>
+                <p class="text-gray-600">Research study about New York</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="pl-4 py-4 text-gray-600 sm:hidden">
+        © 2016 Colmar Academy. All rights reserved.
+      </div>
+
+      <div class="hidden sm:flex justify-between">
+        <div class="pl-4 py-4 text-gray-600">
+          © 2016 Colmar Academy. All rights reserved.
+        </div>
+        <div class="flex text-gray-600 pr-6 justify-center">
+          <a href="#" class="pl-4 py-4">Term</a>
+          <a href="#" class="pl-4 py-4">Privacy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
