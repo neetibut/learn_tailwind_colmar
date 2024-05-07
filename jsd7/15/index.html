@@ -8,7 +8,252 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Hello Earth!</h1>
-    <a href="../../index.html">Back to NJMKL</a>
+    <header>
+      <nav class="md:flex md:justify-between md:h-16">
+        <div class="md:flex md:items-center md:pl-6 hidden">
+          <img src="../../images/ic-logo.svg" alt="" />
+          <p class="md:font-bold md:uppercase">Colmar</p>
+          <span class="md:font-light md:uppercase">Academy</span>
+        </div>
+        <ul
+          class="md:flex md:justify-between md:gap-4 md:pr-6 md:text-center md:justify-items-center md:pt-4 hidden"
+        >
+          <li>On campus</li>
+          <li>On line</li>
+          <li>For companies</li>
+          <li>Sign in</li>
+        </ul>
+        <ul class="flex justify-between md:hidden">
+          <img src="../../images/ic-on-campus.svg" alt="" />
+          <img src="../../images/ic-online.svg" alt="" />
+          <img src="../../images/ic-logo.svg" alt="" />
+          <img src="../../images/ic-login.svg" alt="" />
+        </ul>
+      </nav>
+    </header>
+    <section class="md:flex md:py-8 bg-gray-300 md:pl-6">
+      <div class="md:w-3/5">
+        <img src="../../images/banner.jpg" />
+      </div>
+      <div class="px-4 md:content-center md:pl-6">
+        <h1 class="py-8 font-bold text-2xl">Learn something new everyday</h1>
+        <p class="pb-6">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <button class="bg-gray-500 text-white py-2 w-full">Start here</button>
+      </div>
+    </section>
+    <section class="md:content-center md:bg-slate-100 md:flex">
+      <div class="md:flex-col md:w-3/5">
+        <div class="md:px-6 md:w-full md:px-6 md:py-8">
+          <img src="../../images/information-main.jpg" alt="" />
+        </div>
+        <div class="md:py-8 md:px-6 md:content-center">
+          <h2 class="md:content-center md:font-bold md:text-2xl md:mb-6">
+            It's doesn't hurt practicing
+          </h2>
+          <p class="md:px-6:py-6 md:content-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, commodi
+            ratione. Ab veritatis reiciendis quae earum consequuntur, mollitia
+            neque architecto non culpa quia similique cupiditate, suscipit
+            assumenda fugiat fugit quidem.
+          </p>
+          <p class="md:px-0 md:py-8">Emanuel, Sr.Strategist at Hiring.com</p>
+        </div>
+      </div>
+      <div class="md:flex-col md:mt-8 md:w-2/5">
+        <div class="md:flex">
+          <div class="md:w-2/5 md:p-4">
+            <img src="../../images/information-orientation.jpg" alt="" />
+          </div>
+          <div class="md:flex-col">
+            <h2 class="md:text-center md:pt-8 font-bold">Orientation date</h2>
+            <p class="md:text-center md:p-2">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#"
+              ><li
+                class="md:no-underline md:text-center list-none text-blue-500"
+              >
+                Read more
+              </li></a
+            >
+          </div>
+        </div>
+        <div class="md:flex">
+          <div class="md:w-2/5 md:p-4">
+            <img src="../../images/information-campus.jpg" alt="" />
+          </div>
+          <div class="md:flex-col">
+            <h2 class="md:text-center md:pt-8 font-bold">Our campus</h2>
+            <p class="md:text-center md:p-2">
+              Find which campus is close by you
+            </p>
+            <a href="#"
+              ><li
+                class="md:no-underline md:text-center list-none text-blue-500"
+              >
+                Read more
+              </li></a
+            >
+          </div>
+        </div>
+        <div class="md:flex md:bg-gray-300">
+          <div class="md:w-1/2 md:p-4">
+            <img src="../../images/information-guest-lecture.jpg" alt="" />
+          </div>
+          <div class="md:flex-col">
+            <h2 class="text-center md:pt-8 font-bold">Our guest lecture</h2>
+            <p class="text-center md:p-2">
+              Join a keynote with Oliver Sack about music in medical treatment
+            </p>
+            <a href="#"
+              ><li class="md:no-underline text-center list-none text-blue-500">
+                Read more
+              </li></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="md:bg-slate-200 md:flex-col">
+      <h1 class="md:text-center font-bold text-2xl md:pt-8">Start learning</h1>
+      <div class="md:px-16 md:py-8 grid grid-cols-3 gap-4">
+        <div class="md:text-center">
+          <div class="md:h-auto">
+            <img src="../../images/course-software.jpg" alt="" />
+          </div>
+          <div class="text-left bg-white md:pt-4 md:pl-4 md:pb-6">
+            <h2 class="font-bold">Software engineering</h2>
+            <h6 class="text-gray-400">course</h6>
+            <p class="text-gray-400">
+              Web Development,Mobile Development, iOT,APIs
+            </p>
+          </div>
+        </div>
+        <div class="md:text-center">
+          <div class="md:h-auto">
+            <img src="../../images/course-computer-art.jpg" alt="" />
+          </div>
+          <div class="text-left bg-white md:pt-4 md:pl-4 md:pb-6">
+            <h2 class="font-bold">Computer art</h2>
+            <h6 class="text-gray-400">course</h6>
+            <p class="text-gray-400">
+              Web Development,Mobile Development, iOT,APIs
+            </p>
+          </div>
+        </div>
+        <div class="md:text-center">
+          <div class="md:h-auto">
+            <img src="../../images/course-design.jpg" alt="" />
+          </div>
+          <div class="text-left bg-white md:pt-4 md:pl-4 md:pb-6">
+            <h2 class="font-bold">Design</h2>
+            <h6 class="text-gray-400">course</h6>
+            <p class="text-gray-400">
+              Web Development,Mobile Development, iOT,APIs
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="md:px-16 md:pt-2 grid grid-cols-3 gap-4">
+        <div class="md:text-center">
+          <div class="md:h-auto">
+            <img src="../../images/course-data.jpg" alt="" />
+          </div>
+          <div class="text-left bg-white md:pt-4 md:pl-4 md:pb-6">
+            <h2 class="font-bold">Data</h2>
+            <h6 class="text-gray-400">course</h6>
+            <p class="text-gray-400">
+              Web Development,Mobile Development, iOT,APIs
+            </p>
+          </div>
+        </div>
+        <div class="md:text-center">
+          <div class="md:h-auto">
+            <img src="../../images/course-business.jpg" alt="" />
+          </div>
+          <div class="text-left bg-white md:pt-4 md:pl-4 md:pb-6">
+            <h2 class="font-bold">Business</h2>
+            <h6 class="text-gray-400">course</h6>
+            <p class="text-gray-400">
+              Web Development,Mobile Development, iOT,APIs
+            </p>
+          </div>
+        </div>
+        <div class="md:text-center">
+          <div class="md:h-auto">
+            <img src="../../images/course-marketing.jpg" alt="" />
+          </div>
+          <div class="text-left bg-white md:pt-4 md:pl-4 md:pb-6">
+            <h2 class="font-bold">Marketing</h2>
+            <h6 class="text-gray-400">course</h6>
+            <p class="text-gray-400">
+              Web Development,Mobile Development, iOT,APIs
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="md:bg-slate-100 md:pb-8">
+      <div class="md:text-center md:pt-8">
+        <h1 class="md:text-center md:font-bold md:text-2xl">Thesis exhibit</h1>
+      </div>
+      <div class="md:flex md:pt-8">
+        <div class="md:w-3/5">
+          <div
+            class="md:w-full md:h-auto md:px-6 md:py-6 md:justify-items-center"
+          >
+            <video
+              src="../../../thesis.mp4"
+              type="video/mp4"
+              controls
+              class="md:w-full md:h-auto"
+            ></video>
+          </div>
+          <div class="md:px-6 bg-slate-100">
+            <h2 class="md:font-bold">Reimagine urban</h2>
+            <p class="md:text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, eveniet tempora hic dicta vitae porro quasi
+              incidunt inventore perferendis recusandae praesentium corrupti,
+              maxime magni impedit itaque temporibus ratione voluptatibus quas!
+            </p>
+          </div>
+        </div>
+        <div class="md:flex-col md:w-2/5 md:pt-8">
+          <div class="md:flex w-full bg-gray-300">
+            <div class="md:p-4">
+              <img src="../../images/thesis-fisma.jpg" alt="" />
+            </div>
+            <div class="md:pl-4 md:pt-8 md:flex-col md:pr-8 text-center">
+              <h2 class="md:text-left font-bold text-2xl md:pt-4">
+                Fisma: Design and Prototype
+              </h2>
+              <p class="md:text-left text-gray-500">
+                Designer shoecase with new prototype product
+              </p>
+            </div>
+          </div>
+          <div class="md:flex">
+            <div class="md:w-2/5 md:p-4">
+              <img src="../../images/thesis-now-and-then.jpg" alt="" />
+            </div>
+            <div class="md:pl-4 md:pt-8 md:flex-col md:pr-8 text-center">
+              <h2 class="md:text-left font-bold text-2xl md:pt-8">
+                Now and Then
+              </h2>
+              <p class="md:text-left text-gray-500">
+                Research study about New York
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="md:flex md:justify-between md:pt-4 md:pl-6 md:bg-slate-100 md:pr-6 md:border-t md:pb-8"
+    >
+      <p class="text-gray-400">@2016 Colmar Academy All rights reserved</p>
+      <p class="text-gray-400">Terms pivacy</p>
+    </footer>
   </body>
 </html>
