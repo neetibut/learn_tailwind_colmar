@@ -11,79 +11,177 @@
     <!-- This is header -->
     <header>
       <!-- This is navbar -->
-      <nav class="flex justify-around h-[64px] items-center">
-        <img src="" alt="logo" />
-        <img src="./images/ic-on-campus.svg" alt="on-campus" />
-        <img src="./images/ic-online.svg" alt="online" />
-        <img src="./images/ic-login.svg" alt="login" />
+      <nav class="visible md:hidden flex justify-around h-[64px] items-center">
+        <img src="../../images/ic-logo.svg" alt="logo" />
+        <img src="../../images/ic-on-campus.svg" alt="on-campus" />
+        <img src="../../images/ic-online.svg" alt="online" />
+        <img src="../../images/ic-login.svg" alt="login" />
+      </nav>
+
+      <nav class="hidden md:flex md:justify-between md:mx-[24px] md:h-[64px] md:items-center">
+    
+          <div id="nav-left" class="md:flex md:h-[32px]">
+            <img src="../../images/ic-logo.svg" alt="logo" />
+            <span class="uppercase text-gray-400"><span class="md:font-bold text-gray-900">colmar</span>academy</p>
+          </div>
+
+          <div id="nav-right">
+            <ul class="flex ">
+              <li class="pl-[16px]">On campus</li>
+              <li class="pl-[16px]">Online</li>
+              <li class="pl-[16px]">For companies</li>
+              <li class="pl-[16px]">Sign in</li>
+            </ul>
+          </div>
+
       </nav>
     </header>
 
     <main>
       <!-- This is hero section. -->
       <section class="hero">
-        <img src="./images/banner.jpg" alt="banner" />
+        <div id="hero-phone" class="md:hidden">
+          <img src="../../images/banner.jpg" alt="banner" class="md:w-3/5 md:py-" />
 
         <!-- Text box below -->
-        <div class="flex-col px-[16px] py-[32px] bg-zinc-300">
-          <h1 class="text-4xl text-gray-700 font-black pb-[32px]">
-            Learn something<br />
-            new everyday
-          </h1>
-          <h2 class="text-2xl text-gray-700 font-semibold pb-[24px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </h2>
-          <button class="">Start here</button>
+          <div class="flex-col px-[16px] py-[32px] bg-zinc-300">
+            <h1 class="text-4xl text-gray-700 font-black pb-[32px]">
+              Learn something<br />
+              new everyday
+            </h1>
+            <h2 class="text-2xl text-gray-700 font-semibold pb-[24px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h2>
+            <button class="bg-gray-500 font-semibold text-white w-full h-[45px]">
+              Start here
+            </button>
+          </div>
+        </div>
+
+        <div id="hero-desktop" class="md:visible md:flex bg-zinc-300 items-center">
+          <img src="../../images/banner.jpg" alt="banner" class="md:w-3/5 md:py-[32px] md: p-[24px]" />
+      
+
+          <!-- Text box below -->
+            <div class="flex-col px-[16px] py-[32px] bg-zinc-300 md:my-[32px] ">
+              <h1 class="text-4xl text-gray-700 font-black pb-[32px]">
+                Learn something<br />
+                new everyday
+              </h1>
+              <h2 class="text-2xl text-gray-700 font-semibold pb-[24px]">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </h2>
+              <button class="bg-gray-500 font-semibold text-white w-full py-[8px]">
+                Start here
+              </button>
+            </div>
         </div>
       </section>
 
       <!-- This is about section. -->
       <section class="about"></section>
-      <div>
-        <img src="./images/information-orientation-mobile.jpg" />
-        <h1>Orientation</h1>
-        <h2>Tue 10/11 & Wed 10/12 8zm-3pm</h2>
-        <h2>Read more</h2>
+      <div class="mx-[16px] mt-[16px] mb-[64px]">
+        <img
+          src="../../images/information-orientation-mobile.jpg"
+          alt="orientation"
+        />
+        <div class="pl-[16px]">
+          <h1 class="text-2xl text-gray-700 font-semibold mt-[25px]">
+            Orientation date
+          </h1>
+          <h2 class="text-xl text-gray-500">Tue 10/11 & Wed 10/12: 8am-3pm</h2>
+          <h2 class="text-xl text-blue-400">Read more</h2>
+        </div>
       </div>
 
-      <div>
-        <img src="./images/information-campus-mobile.jpg" />
-        <h1>Our campus</h1>
-        <h2>Find which campus is close by you.</h2>
-        <h2>Read more</h2>
+      <div class="mx-[16px] mt-[16px] mb-[64px]">
+        <img src="../../images/information-campus-mobile.jpg" alt="campus" />
+        <div class="pl-[16px]">
+          <h1 class="text-2xl text-gray-700 font-semibold mt-[25px]">
+            Our campus
+          </h1>
+          <h2 class="text-xl text-gray-500">
+            Find which campus is close by you.
+          </h2>
+          <h2 class="text-xl text-blue-400">Read more</h2>
+        </div>
       </div>
 
-      <div>
-        <img src="./images/information-guest-lecture-mobile.jpg" />
-        <h1>Our guest lecture</h1>
-        <h2>
-          Join a keynote with Oliver Sack about music in medical treatment.
-        </h2>
-        <h2>Read more</h2>
+      <div class="mx-[16px] mt-[16px] mb-[32px]">
+        <img
+          src="../../images/information-guest-lecture-mobile.jpg"
+          alt="guest lecture"
+        />
+        <div class="pl-[16px]">
+          <h1 class="text-2xl text-gray-700 font-semibold mt-[25px]">
+            Our guest lecture
+          </h1>
+          <h2 class="text-xl text-gray-500">
+            Join a keynote with Oliver Sack about music in medical treatment.
+          </h2>
+          <h2 class="text-xl text-blue-400">Read more</h2>
+        </div>
       </div>
 
       <!-- This is course section. -->
-      <section class="course m-[32px]">
-        <h1>Start learning</h1>
-        <div>Software engineering</div>
-        <div>Computer art</div>
-        <div>Design</div>
-        <div>Data</div>
-        <div>Business</div>
-        <div>Marketing</div>
-      </section>
+      <section class="flex-col course my-[32px] mx-[16px]">
+        <h1
+          class="text-center text-4xl text-gray-700 font-bold mt-[25px] mb-[16px]"
+        >
+          Start learning
+        </h1>
+        <div class="flex mb-[8px] bg-gray-300">
+          <h3 class="p-[16px] pb-[24px] text-xl font-semibold text-gray-700">
+            Software engineering
+          </h3>
+        </div>
+        <div class="flex mb-[8px] bg-gray-300">
+          <h3 class="p-[16px] pb-[24px] text-xl font-semibold text-gray-700">
+            Computer art
+          </h3>
+        </div>
+        <div class="flex mb-[8px] bg-gray-300">
+          <h3 class="p-[16px] pb-[24px] text-xl font-semibold text-gray-700">
+            Design
+          </h3>
+        </div>
+        <div class="flex mb-[8px] bg-gray-300">
+          <h3 class="p-[16px] pb-[24px] text-xl font-semibold text-gray-700">
+            Data
+          </h3>
+        </div>
+        <div class="flex mb-[8px] bg-gray-300">
+          <h3 class="p-[16px] pb-[24px] text-xl font-semibold text-gray-700">
+            Business
+          </h3>
+        </div>
+        <div class="flex mb-[8px] bg-gray-300">
+          <h3 class="p-[16px] pb-[24px] text-xl font-semibold text-gray-700">
+            Marketing
+          </h3>
+        </div>
 
       <!-- This is thesis section. -->
-      <section class="thesis m-[32px]">
-        <h1>Thesis exhibition</h1>
+      <section class="thesis my-[32px]">
+        <h1
+          class="text-center text-4xl text-gray-700 font-bold mt-[25px] mb-[16px]"
+        >
+          Thesis exhibits
+        </h1>
         <video controls autoplay>
-          <source src="./videos/thesis.mp4" type="video/mp4" />
+          <source src="../../videos/thesis.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>
     </main>
 
     <!-- This is footer. -->
-    <footer>©2016 Col,ar Academy. All rights reserved.</footer>
+    <footer class="m-[16px] text-sm flex justify-between">
+      <p >©2016 Colmar Academy. All rights reserved.</p>
+      <ul class="hidden md:flex gap-2">
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+    </footer>
   </body>
 </html>
